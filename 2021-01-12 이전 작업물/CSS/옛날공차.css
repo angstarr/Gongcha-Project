@@ -1,0 +1,142 @@
+@charset "utf-8";
+<style>
+  * {
+    /* margin:0;
+    padding:0; */
+    list-style:none;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  ul {
+    text-align: center;
+  }
+  #gong{
+  }
+  header{
+  }
+  #topmenu{
+    top:0;
+    position: fixed;
+    height: 120px;
+    width: 2400px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    background-color: white;
+  }
+  #topmenu .dropdown{
+    line-height: 110px;
+    position: relative;
+    display: inline-block;
+    background-color: white; /*드랍메뉴 배경부분*/
+    font-weight: bold;
+    height: 120px;
+    text-align: center;
+  }
+  #topmenu ul{
+    position:absolute;
+    list-style:none;
+    margin-top:0;
+  }
+  #topmenu ul a{
+    text-align: center;
+  }
+  #topmenu .dropdown ul { /*드랍다운아래 ul 밑으로 120시작*/
+    float:none;
+    top:120px;
+  }
+  #topmenu li{
+    float:left;
+    position:relative;
+    font-size:18px;
+    width: 200px;
+    height: 200px;
+  }
+  #topmenu li a{
+    display:block;
+    text-align: center;
+    /* font-weight: bold; */
+    font-size:18px;
+    color:black;
+    text-decoration: none;
+  }
+  #topmenu .sub {
+    background-color: gray opacity:0.8;
+    position: absolute;
+    line-height: 40px;
+    display:none;
+    opacity:0;
+    left:0;
+    box-shadow: 0 6px 12px rgba(0,0,0,.255);
+  }
+  #topmenu .sub a{
+    color:white;
+    text-shadow: 1px 1px 0px #bdbdbd;
+  }
+  #topmenu ul .dropdown:hover .sub{
+    display:block;
+    opacity:1;
+  }
+  #topmenu .sub a:hover{
+    font-size: 20px;
+    color: crimson;
+  }
+  #topmenu img{
+    margin-top: 15%;
+    position: relative;
+    /* height:60px; */
+  }
+  #topmenu .dropdown2{  /* 한글 메뉴바 첫부분*/
+    /* padding-top:40px; */
+    line-height: 100px;
+    position: relative;
+    /* bottom: 16px; */
+    display: inline-block;
+    background-color: red;
+    font-weight: bold;
+    height: 120px;
+    text-align: center;
+    opacity: 0;
+  }
+  #middle{
+      padding-top:120px;
+      position:relative;
+      width:1200px;
+      height:400px;
+      background-image: url("sss.jpg");
+      z-index:-1;
+  }
+  h2{
+    position:absolute;
+    color:white;
+    font-weight: bold;
+    font-size: 60px;
+    margin:0;
+    left:18%;
+    top:320px;
+  }
+  h4{
+    position:absolute;
+    color:white;
+    font-weight: bold;
+    font-size: 32px;
+    margin:0;
+    left:18%;
+    top:400px;
+  }
+  /* .center{
+    background: url:(CSS/sss.jpg) center 0 no-repeat;
+    max-height: 400px;
+    overflow: hidden;
+    position:absolute;
+    z-index:1;
+  } */
+  /* .center img{
+    max-height: initial;
+    margin-top: -15%;
+  } */
+
+
+
+</style>
