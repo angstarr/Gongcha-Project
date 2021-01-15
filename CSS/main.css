@@ -14,7 +14,11 @@ a:visited{
 a img{
   border:0;
 }
+html{
+  height: 100%;
+}
 body{
+  min-height: 100%;
   padding:0;
   margin:0;
 }
@@ -182,10 +186,10 @@ body{
   padding:0;
 }
 #container{
-  width: 100%;
+  /* width: 100%; */
   padding-top:110px;
-  align-items: center;
-  margin: 0 auto;
+  /* align-items: center;
+  margin: 0 auto; */
 }
 #main{
   width:1200px;
@@ -635,8 +639,6 @@ body{
   padding:80px 680px 0;
   margin: -80px -680px 0;
   position: relative;
-  background-color: #e4dcd2;
-  height:545px;
 }
 .brand_story_wrap:before{
   display:block;
@@ -646,7 +648,7 @@ body{
   position:absolute;
   top:0;
   left:0;
-  background-color: white:
+  background-color: #e4dcd2;
 }
 .brand_story_head{
   margin:0 0 60px;
@@ -711,6 +713,7 @@ body{
   color:gray;
 }
 .brand_story_body ul li .right .txt{
+  font-weight: normal;
   font-size:15px;
   line-height: 26px;
   color:gray;
@@ -727,7 +730,7 @@ body{
   width:100%;
   height:215px;
   margin:95px 0 0;
-  display:inline;
+  display:inline-block;
   position:relative;
 }
 .brand_story_body ul li .left{
