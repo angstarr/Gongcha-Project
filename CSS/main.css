@@ -11,9 +11,12 @@ a:visited{
   text-decoration: none;
   color:white;
 }
-
 a img{
   border:0;
+}
+body{
+  padding:0;
+  margin:0;
 }
 #wrap{
   width:100%;
@@ -422,19 +425,130 @@ a img{
   font-size:15px;
 
 }
-/*  #Quickmenu{
-  background-color: Yellow;
-}
-#container{
+ #footer{
+  width:100%;
+  position:relative;
   display : grid;
-  background-color: powderblue;
-  padding: 110px 0 0;
 }
-#footer{
-  display : grid;
-  background-color: green
-} */
-
+#footer:before{
+  display:block;
+  content:'';
+  width:50%;
+  height:100%;
+  position:absolute;
+  left:0;
+  bottom:0;
+  background:#575757;
+}
+#footer .logo{
+  position: absolute;
+  top:40px;
+  left: 40px;
+}
+.footer_inner{
+  width:1200px;
+  margin:0 auto;
+  overflow:hidden;
+  position: relative;
+  z-index:1;
+}
+.footer_left{
+  background-color:#575757;
+  width:300px;
+  height: 166px;
+  float:left;
+  position: relative;
+}
+.footer_right{
+  background-color: white;
+  width:900px;
+  height: 166px;
+  float:left;
+  position: relative;
+}
+.ft_menu{
+  position:absolute;
+  top:36px;
+  left:40px;
+  list-style:none;
+  padding:0;
+}
+.ft_menu a{
+  color:black;
+}
+.ft_menu li:first-child{
+  margin:0;
+}
+.ft_menu li{
+  margin:0 0 0 41px;
+  font-weight: 600;
+  float:left;
+  position: relative;
+}
+.ft_menu li:first-child:before{
+  display:none;
+}
+.ft_menu li:before{
+  display:block;
+  content: '';
+  width:1px;
+  height:14px;
+  position: absolute;
+  top:4px;
+  left:-20px;
+  background-color:gray;
+}
+.ft_center{
+  font-weight: 700;
+  font-size:15px;
+  line-height: 22px;
+  position: absolute;
+  top:80px;
+  left:40px;
+}
+.tell{
+  display:inline-block;
+  padding:0 0 0 18px;
+  margin: 0 0 0 10px;
+}
+.time{
+  display:inline-block;
+  margin:0 0 0 10px;
+  font-weight: 500;
+  font-size:13px;
+  line-height: 22px;
+  color:gray;
+}
+.address{
+  position:absolute;
+  font-size:13px;
+  top:130px;
+  left:40px;
+  font-style:normal;
+}
+.address span:first-child{
+  margin:0;
+}
+.address span{
+  display:block;
+  float:left;
+  margin:0 0 0 31px;
+  color:gray;
+  position:relative;
+}
+.address span:first-child:before{
+  display:none;
+}
+.address span:before{
+  display:block;
+  content:'';
+  width:1px;
+  height:14px;
+  position: absolute;
+  top:4px;
+  left: -15px;
+  background-color:gray;
+}
 /*ㅡㅡㅡㅡㅡㅡBrand storyㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 #pagetop{
   width:1200px;
