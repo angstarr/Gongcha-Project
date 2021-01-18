@@ -11,6 +11,10 @@ a:visited{
   text-decoration: none;
   color:white;
 }
+img{
+  vertical-align: top;
+  border:0px;
+}
 a img{
   border:0;
 }
@@ -666,6 +670,7 @@ body{
 .brand_story_head .txt{
   font-size: 16px;
   line-height: 26px;
+  font-weight: normal;
   color:gray;
   margin:0 0 46px;
   text-align:center;
@@ -738,7 +743,7 @@ body{
   padding:14px 0 0;
   float:left;
 }
-.brnad_story_body ul li img{
+.brand_story_body ul li img{
   position:absolute;
   top:0;
   left:495px;
@@ -747,4 +752,133 @@ body{
   width:400px;
   padding:55px 0 0;
   float:right;
+}
+/* -------브랜드 약속 --------*/
+.promise_info{
+  color:gray;
+  margin: 0 0 30px;
+}
+.promise_info .tit{
+  color:black;
+  margin: 0 0 25px;
+}
+.promise_info .txt{
+  font-weight: normal;
+  font-size:16px;
+  line-height: 26px;
+  margin: 0 0 10px;
+}
+.promise_info .red{
+  color:#983b43;
+}
+.brand_promise_wrap{
+  width:1200px;
+  padding: 80px 680px 45px;
+  margin: -80px -680px -120px;
+  position: relative;
+}
+.brand_promise_wrap:before{
+  display:block;
+  content:'';
+  width:100%;
+  height: 506px;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #e4dcd2;
+}
+.brand_promise_head{
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.brand_promise_head .visual{
+  text-align:left;
+}
+.brand_promise_head img{
+  position:relative;
+  left:306px;
+  vertical-align: top;
+  border:0px;
+}
+.brand_promise_body ol{
+  display:inline-block;
+  width:100%;
+  position:relative;
+  margin:0;
+}
+.brand_promise_body ol:before{
+  display:block;
+  content: '';
+  width:1px;
+  position:absolute;
+  top:0;
+  bottom:250px;
+  left:600px;
+  background-color: #983b43;
+}
+.brand_promise_body ol li{
+  width:600px;
+  box-sizing: border-box;
+  position: relative;
+  z-index:1;
+  list-style:none;
+}
+.brand_promise_body ol li.left{
+  text-align: right;
+  padding:0 79px 0 0;
+  float: left;
+}
+.brand_promise_body ol li.left .num{
+  right: 24px;
+}
+.brand_promise_body ol li .num{
+  width:36px;
+  height: 83px;
+  position: absolute;
+  top:-20px;
+  font-weight: 800;
+  font-size:58px;
+  line-height: 83px;
+  color:#983b43;
+  background-color: white;
+  text-align: center;
+  z-index:1;
+}
+.brand_promise_body ol li .tit{
+  font-weight: 700;
+  font-size:20px;
+  line-height: 24px;
+  color: #983b43;
+  margin:0;
+}
+.brand_promise_body ol li .txt{
+  font-size:15px;
+  font-weight: normal;
+  line-height: 26px;
+  color:gray;
+  margin:20px 0 0;
+}
+.brand_promise_body ol li .img{
+  margin: 36px 0 0;
+}
+.brand_promise_body ol li.p2{
+  margin:254px 0 0;
+}
+.brand_promise_body ol li.right{
+  text-align:left;
+  padding: 0;
+  float:right;
+}
+.brand_promise_body ol li.right .num{
+  left: -58px;
+}
+.brand_promise_body ol li.p3{
+  margin:85px 0 0;
+}
+.brand_promise_body ol li.p4{
+  margin:112px 0 0;
+}
+.brand_promise_body ol li.p5{
+  margin:82px 0 0;
 }
