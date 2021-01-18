@@ -882,3 +882,28 @@ body{
 .brand_promise_body ol li.p5{
   margin:82px 0 0;
 }
+/*----------브랜드 아이덴티티 --------*/
+.identity_wrap{
+  margin:-80px 0 -50px;
+}
+.identity_head{
+  padding: 80px 680px;
+  margin: 0 -680px;
+  background-color:#e4dcd2;
+  text-align: center;
+}
+.identity_wrap .tit{
+  font-weight: 700;
+  font-size:26px;
+  color:black;
+  margin: 0 0 22px;
+}
+.identity_wrap .txt{
+  font-size:16px;
+  font-weight: normal;
+  line-height: 26px;
+  color:gray;
+}
+.identity_wrap .txt .red{
+  color:#983b43;
+}
