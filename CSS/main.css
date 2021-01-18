@@ -907,3 +907,96 @@ body{
 .identity_wrap .txt .red{
   color:#983b43;
 }
+.identity_body ul li{
+  list-style: none;
+}
+.identity_list{
+  padding:0;
+  margin:0;
+}
+.identity_list > li:first-child{
+  border-top:none;
+}
+.identity_list > li{
+  padding: 70px 0 70px 340px;
+  position: relative;
+  overflow:hidden;
+  border-top:1px solid gray;
+}
+.identity_list > li .hgroup{
+  width:340px;
+  position: absolute;
+  top:70px;
+  left:0;
+  margin:0;
+}
+.identity_list > li .hgroup .tit{
+  font-weight: 700;
+  font-size:26px;
+  color:black;
+  margin:0 0 8px;
+  text-align: left;
+}
+.identity_list > li .hgroup .txt{
+  font-size:16px;
+  color:gray;
+}
+.identity_list > li .visual{
+  width:432px;
+  float:left;
+}
+.identity_list > li .info2{
+  width:428px;
+  float:left;
+}
+.identity_list > li .info2 .txt{
+  font-size:16px;
+  line-height: 26px;
+  color:gray;
+}
+.mb10{
+  margin-bottom:10px !important;
+}
+.mb30{
+  margin-bottom:30px !important;
+}
+.identity_list > li .info2 .txt .identity{
+  font-weight: 700;
+  font-size:20px;
+  color:black;
+}
+.info2 .txt{
+  margin:0;
+}
+.identity_list > li .patterns{
+  margin:0 0 65px;
+  padding:0;
+  overflow:hidden;
+}
+.identity_list > li .patterns li:first-child{
+  width:209px;
+  margin:0;
+}
+.identity_list > li .patterns li{
+  width:210px;
+  margin:0 0 0 7px;
+  float:left;
+}
+.identity_list > li .patterns li img{
+  margin:0 0 18px;
+}
+.identity_list > li .patterns li .txt{
+  font-size:14px;
+  color:gray;
+letter-spacing: -0.05em;
+text-align: center;
+}
+.identity_list > li .info3{
+  padding:30px 0 0;
+  border-top:1px solid white;
+}
+.identity_list > li .info3 .txt{
+  font-size:16px;
+  line-height: 26px;
+  color:gray;
+}
