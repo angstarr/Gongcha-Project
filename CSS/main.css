@@ -210,14 +210,78 @@ ol, ul, li{
 #header .util{
   position: absolute;
   top:32px;
-  right:171px;
+  right:250px;
 }
 .util a{
   font-size:14px;
   font-weight: 600;
   color:black;
 }
-
+.hide{
+  width:0px;
+  height: 0px;
+  font-size:0px;
+  line-height: 0px;
+  position:absolute;
+  left: -9999px;
+  top: -9999px;
+  visibility: hidden;
+}
+#header .sns{
+  position: absolute;
+  top:32px;
+  right:170px;
+  padding:0;
+}
+#header .sns li:first-child{
+  margin:0;
+}
+#header .sns li{
+  margin:0 0 0 20px;
+  float:left;
+}
+#header .sns li a{
+  display:block;
+  width: 20px;
+  height: 20px;
+}
+#header .sns li.facebook a{
+  background-image: url('btn_f.png');
+}
+#header .sns li.instagram a{
+  background-image: url('btn_i.png');
+}
+#header .go_main{
+  padding:15px 0 0;
+  background-image: url('go_main_franchise_bg.png');
+  display:block;
+  width:145px;
+  height:96px;
+  box-sizing: border-box;
+  position:absolute;
+  top:0;
+  right:0;
+  text-align:center;
+}
+#header .go_main span{
+  padding:0 0 0 45px;
+  font-size: 18px;
+  line-height: 26px;
+  background-image: url('go_main_franchise_ico.png');
+  background-repeat: no-repeat;
+  text-align: left;
+  display:inline-block;
+  font-weight: 500;
+  color:white;
+}
+#header .go_main p{
+  font-weight: 500;
+  font-size:16px;
+  line-height: 23px;
+  color:white;
+  padding:0;
+  margin:0;
+}
 #container{
   /* width: 100%; */
   padding-top:110px;
