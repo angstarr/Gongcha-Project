@@ -128,7 +128,7 @@ body{
   width: 100%;
   height: 118px;
   background-color: white;
-  z-index:1;
+  z-index:5;
 }
 .header_menu{
   width: 1200px;
@@ -161,6 +161,7 @@ ol, ul, li{
 }
 .eng{
   line-height:1.2;
+  height:118px;
   text-align:center;
   box-sizing:border-box;
   float:left;
@@ -187,7 +188,8 @@ ol, ul, li{
   display:none;
   float:none;
   position:absolute;
-  font-size:15px;
+  font-size:14px;
+  font-weight: 500;
   margin-top:51px;
   padding:0;
   list-style:none;
@@ -197,7 +199,8 @@ ol, ul, li{
   background-color: rgba( 0, 0, 0, 0.6);
 }
 .sub a:hover{
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 600;
   color: crimson;
 }
 .sub > li{
