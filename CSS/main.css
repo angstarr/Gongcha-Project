@@ -76,7 +76,7 @@ body{
   box-sizing: border-box;
   border: none;
 }
-.btn{
+.section2 .btn{
   display:block;
   width:100%;
   height:50px;
@@ -149,7 +149,6 @@ body{
 }
 ol, ul, li{
   list-style: none;
-  text-align: center;
 }
 #gong li{
   position:relative;
@@ -284,6 +283,15 @@ ol, ul, li{
   color:white;
   padding:0;
   margin:0;
+}
+#Quickmenu{
+  position:fixed;
+  top:50%;
+  right:30px;
+  width:79px;
+  margin:-230px 0 0;
+  z-index: 1;
+
 }
 #container{
   /* width: 100%; */
@@ -508,6 +516,73 @@ ol, ul, li{
   font-size:24px;
   float:left;
   color:black;
+}
+.main_recipe .hgroup{
+  width:100%;
+  margin:0 0 60px;
+  overflow: hidden;
+}
+.main_recipe .recipe{
+  width:100%;
+  height:255px;
+  position: relative;
+}
+.main_recipe .recipe li{
+  height:255px;
+  padding:0 0 0 600px;
+  position: absolute;
+  top:0;
+}
+.main_recipe .recipe li .img{
+  width: 600px;
+  height: 255px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.main_recipe .recipe li .tit1{
+  font-weight: 700;
+  font-size:36px;
+  left:0;
+  line-height: 1;
+  color:black;
+  margin:0 0 15px;
+  position:relative;
+}
+.main_recipe .recipe li .tit2{
+  font-weight: 700;
+  font-size:24px;
+  color:#993b42;
+  left:0;
+  line-height: 1;
+  margin: 0 0 20px;
+  position:relative;
+}
+.main_recipe .recipe li .txt{
+  font-size:15px;
+  font-weight: normal;
+  line-height: 25px;
+  left:0;
+  color:gray;
+  margin:0 0 25px;
+  position:relative;
+}
+.main_recipe .recipe li .btn{
+  display:inline-block;
+  width:132px;
+  height:35px;
+  box-sizing: border-box;
+  border:1px solid #993b42;
+  text-align: center;
+  position:relative;
+}
+.main_recipe .recipe li .btn span{
+  display:inline-block;
+  padding:0;
+  font-weight: 600;
+  font-size:13px;
+  line-height: 33px;
+  color:#993b42;
 }
 .tab{
   float: right;
