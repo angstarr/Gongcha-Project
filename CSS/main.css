@@ -485,7 +485,7 @@ ol, ul, li{
   float:left;
   width:800px;
   height:500px;
-  background-image: url('comingsoon.jpg');
+  /* background-image: url('comingsoon_1.jpg'); */
   position:relative;
 }
 .bx_control a{
@@ -494,6 +494,7 @@ ol, ul, li{
   color:black;
   font-size:30px;
   text-align: center;
+  /* margin:0; */
 }
 .bx_prev{
   width: 50px;
