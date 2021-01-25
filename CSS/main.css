@@ -567,7 +567,7 @@ ol, ul, li{
   height: 450px;
   vertical-align: top;
 }
-.info{
+#main_contents .info{
   display:block;
   width:100%;
   padding:30px;
@@ -1263,4 +1263,74 @@ text-align: center;
   font-size:16px;
   line-height: 26px;
   color:gray;
+}
+
+/* global  */
+.global_wrap{
+  margin:-80px 0 -120px;
+}
+.global_head{
+  width:1200px;
+  padding: 80px 680px 50px;
+  margin:0 -680px;
+  background-image: url('img/global_head_back.png');
+  background-color: #e4dcd2;
+  background-position-x:1131px;
+  background-position-y:68px;
+  background-repeat: no-repeat;
+}
+.global_head .tit{
+  font-weight: 700;
+  font-size:26px;
+  line-height: 40px;
+  color:black;
+  margin:0 0 22px;
+}
+.global_head .txt{
+  font-weight: normal;
+  font-size:16px;
+  line-height: 26px;
+  color:gray;
+  margin:0 0 26px;
+}
+.global_head .txt .red{
+  color:#983b43;
+}
+.contents{
+  padding:70px 0;
+}
+.global_body .contents li:first-child{
+  margin:0;
+}
+.global_body .contents li{
+  width:100%;
+  display:table;
+  table-layout: fixed;
+  margin:70px 0 0;
+}
+.global_body .contents li .visual{
+  display:table-cell;
+  width:571px;
+}
+.global_body .contents li.odd .info{
+  padding:0 0 0 120px;
+}
+.global_body .contents li .info{
+  display:table-cell;
+  width:auto;
+  vertical-align: middle;
+}
+.global_body .contents li .info .tit{
+  font-weight: 700;
+  font-size:20px;
+  line-height: 30px;
+  color:black;
+  margin:0;
+}
+.global_body .contents li .info .txt{
+  font-weight: normal;
+  font-size:16px;
+  line-height: 26px;
+  color:gray;
+  margin:22px 0 0;
 }
