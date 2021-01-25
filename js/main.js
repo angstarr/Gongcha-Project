@@ -1,9 +1,13 @@
 var num = 1;
-function control(direct){
-  if (direct) {
+function bx_image_control(direct)
+{
+  if (direct)
+  {
     if (num == 3) return;
     num++;
-  } else {
+  }
+  else
+  {
     if (num == 1) return;
     num--;
 }
