@@ -833,12 +833,14 @@ ol, ul, li{
   z-index:-1;
 }
 .page_brand{
-  background-image: url('img/page_top_visual_brand.jpg');
   width:1200px;
   height:264px;
   padding:0 680px;
   margin: 0 -680px;
   position:relative;
+}
+.page_brand.brand{
+  background-image: url('img/page_top_visual_brand.jpg');
 }
 .page_brand .tit{
   color:white;
@@ -1334,4 +1336,11 @@ text-align: center;
   line-height: 26px;
   color:gray;
   margin:22px 0 0;
+}
+
+/* store */
+
+.page_brand.store{
+  background-image: url('img/page_top_visual_store.jpg');
+  background-repeat: no-repeat;
 }
