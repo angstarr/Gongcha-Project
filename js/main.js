@@ -1,17 +1,25 @@
-var num = 1;
-function bx_image_control(direct)
+var curBxImgNumb = 1;
+var bxImg = document.getElementById("season");
+
+function bx_image_control(isNextBtn)
 {
-  if (direct)
+  if (isNextBtn)
   {
-    if (num == 3) return;
-    num++;
+    if (curBxImgNumb == 3)
+    {
+      return;
+    } else {
+      curBxImgNumb++;
+    }
   }
   else
   {
-    if (num == 1) return;
-    num--;
-}
-
-var imgTag = document.getElementById("season");
-imgTag.setAttribute("src", "CSS/comingsoon_" + num + ".jpg");
+    if (curBxImgNumb == 1)
+    {
+      return;
+    } else {
+      curBxImgNumb--;
+    }
+  }
+  bxImg.setAttribute("src", "css/img/comingsoon_" + curBxImgNumb + ".jpg");
 }
