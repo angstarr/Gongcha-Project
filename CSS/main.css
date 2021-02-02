@@ -1434,3 +1434,53 @@ text-align: center;
     float:left;
     font-weight: 700;
 }
+
+/* Menu */
+
+.page_title.menu {
+    background-image: url('img/page_top_visual_menu.jpg');
+    background-repeat: no-repeat;
+}
+
+.order_method_wrap {
+    width: 1200px;
+    margin: -80px 0 -120px;
+    position: relative;
+}
+
+.order_method_head {
+    width: 1200px;
+    height: 426px;
+    padding: 80px 680px 0;
+    margin: 0 -680px;
+    position: relative;
+    background-color: #e4dcd2;
+    text-align: center;
+}
+
+.order_method_head .tit {
+    font-weight: 700;
+    font-size: 26px;
+    color: black;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.order_method_head .txt {
+    font-weight: normal;
+    font-size: 16px;
+    color: gray;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.order_method_head .txt .red {
+    color: #983b43;
+}
+
+.order_method_head .img {
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    margin: 0 0 0 -600px;
+}
