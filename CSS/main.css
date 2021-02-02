@@ -863,6 +863,16 @@ ol, ul, li{
   margin:0 auto;
   z-index:-1;
 }
+.hide {
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    visibility: hidden;
+}
 .page_title{
   width:1200px;
   height:264px;
@@ -918,26 +928,26 @@ ol, ul, li{
     float:left;
 }
 
-.this{
-  display:block;
-  padding:0 0 0 24px;
-  float:left;
-  font-size:14px;
-  line-height: 37px;
-  font-weight: 700;
-  color:white;
-}
-
 .location .this {
     background-image: url('img/location_brand_arr.png');
     background-position: 10px center;
     background-repeat: no-repeat;
+    display:block;
+    padding:0 0 0 24px;
+    float:left;
+    font-size:14px;
+    line-height: 37px;
+    font-weight: 700;
+    color:white;
 }
 
-.depth{
+.location .depth {
+  background-image: url('img/location_brand_arr.png');
+  background-position: 10px center;
+  background-repeat: no-repeat;
   color: #ffafbf;
   display:block;
-  padding:0 0 0 18px;
+  padding:0 0 0 24px;
   float:left;
   font-size:14px;
   line-height: 37px;
