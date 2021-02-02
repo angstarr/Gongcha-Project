@@ -100,12 +100,14 @@
       <div id="container">
         <div id="container_brand">
           <div id="pagetop">
-              <div class="page_brand store">
+              <div class="page_title store">
                 <h2 class="tit">STORE</h2>
                 <p class="txt">간편하게 공차의 매장을 검색해 보세요.</p>
                 <div class="location">
-                <a href="index.html" class="home">Home ▶</a>
-                <span class="this">매장 찾기</span>
+                <a href="index.html" class="home">
+                  <span class="hide">Home</span>
+                </a>
+                <span class="this">매장찾기</span>
                 </div>
               </div>
             </div>
@@ -114,7 +116,7 @@
             <div class="find_store_wrap">
               <form id="frmSearch">
                 <div class="board_search_wrap mb30">
-                  <select name="city" id="city">
+                  <select name="city" id="findStoreCity">
                     <option value>시/도</option>
                     <option value="01">서울특별시</option>
                     <option value="02">부산광역시</option>
@@ -134,7 +136,7 @@
                     <option value="16">전라남도</option>
                     <option value="17">제주특별자치도</option>
                   </select>
-                  <select name="county" id="county">
+                  <select name="county" id="findStoreCounty">
                     <option value>구/군</option>
                   </select>
                   <div class="box">

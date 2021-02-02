@@ -863,32 +863,32 @@ ol, ul, li{
   margin:0 auto;
   z-index:-1;
 }
-.page_brand{
+.page_title{
   width:1200px;
   height:264px;
   padding:0 680px;
   margin: 0 -680px;
   position:relative;
 }
-.page_brand.brand{
+.page_title{
   background-image: url('img/page_top_visual_brand.jpg');
 }
-.page_brand .tit{
+.page_title .tit{
   color:white;
   font-size:42px;
   font-weight: 700;
   position:absolute;
   top: 90px;
-  left: 55%;
+  left: 50%;
   margin:0 0 0 -600px;
 }
-.page_brand .txt{
+.page_title .txt{
   color:white;
   font-size: 18px;
   font-weight: 700;
   position:absolute;
   top: 140px;
-  left: 55%;
+  left: 50%;
   line-height: 30px;
   margin:0 0 0 -600px
 }
@@ -907,13 +907,33 @@ ol, ul, li{
 .location > a{
   color: #ffafbf;
 }
-.home{
-  color: #ffafbf;
-  display:block;
-  float:left;
-  line-height: 37px;
-  font-size:14px;
+
+.location .home {
+    background-image: url('img/location_brand_home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width:13px;
+    height: 37px;
+    float:left;
 }
+
+.this{
+  display:block;
+  padding:0 0 0 24px;
+  float:left;
+  font-size:14px;
+  line-height: 37px;
+  font-weight: 700;
+  color:white;
+}
+
+.location .this {
+    background-image: url('img/location_brand_arr.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+
 .depth{
   color: #ffafbf;
   display:block;
@@ -922,15 +942,7 @@ ol, ul, li{
   font-size:14px;
   line-height: 37px;
 }
-.this{
-  display:block;
-  padding:0 0 0 18px;
-  float:left;
-  font-size:14px;
-  line-height: 37px;
-  font-weight: 700;
-  color:white;
-}
+
 #contents{
   width:1200px;
   padding:80px 0 120px;
@@ -1371,12 +1383,12 @@ text-align: center;
 
 /* store */
 
-.page_brand.store{
+.page_title.store{
   background-image: url('img/page_top_visual_store.jpg');
   background-repeat: no-repeat;
 }
 
-#frmSearch #city, #county {
+#frmSearch #findStoreCity, #findStoreCounty {
     width: 280px;
     font-weight: 500;
 }
