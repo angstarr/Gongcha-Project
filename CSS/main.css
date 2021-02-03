@@ -1624,3 +1624,58 @@ text-align: center;
     left: 0;
     bottom: 15px;
 }
+
+/* Menu end */
+
+/* Drink start */
+
+.drink_list {
+    margin: 0 0 70px;
+}
+
+.drink_list ul {
+    padding: 16px 0;
+    overflow: hidden;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.drink_list ul li {
+    width: 200px;
+    float: left;
+}
+
+.drink_list ul li a {
+    display: block;
+    height: 22px;
+    padding: 12px 0 12px 19px;
+    background-image: url('img/bullet2.png');
+    background-position: 0 center;
+    background-repeat: no-repeat;
+}
+
+.drink_list ul li a span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+}
+
+.drink_list ul li a:hover span {
+    color: #993b42;
+    border-bottom: 2px solid #993b42;
+}
+
+.sub_hgroup {
+    width: 100%;
+    margin: 0 0 20px;
+    overflow: hidden;
+}
+
+.sub_hgroup .tit {
+    font-weight: 700;
+    font-size: 26px;
+    float: left;
+    vertical-align: bottom;
+}
