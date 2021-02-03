@@ -161,9 +161,14 @@ input[type=text] {
 
 }
 
+dl, dt, dd {
+    margin: 0;
+}
+
 .red {
     color:#983b43;
 }
+
 #wrap{
   width:100%;
   min-width: 1200px;
@@ -1501,7 +1506,7 @@ text-align: center;
 }
 
 .order_method_body .hgroup {
-    width: 380px;
+    width: 320px;
     float: left;
 }
 
@@ -1513,7 +1518,7 @@ text-align: center;
 }
 
 .order_method_body .hgroup .txt {
-    font-size :16px;
+    font-size :15px;
     line-height: 26px;
     font-weight: normal;
 }
@@ -1521,4 +1526,101 @@ text-align: center;
 .order_method_body .content {
     width: 820px;
     float: right;
+}
+
+.order_method_body .step1 .content ul {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.order_method_body .step1 .content ul li:first-child {
+    margin: 0;
+}
+
+.order_method_body .step1 .content ul li {
+    width: 120px;
+    padding: 10px 0 0;
+    margin: 0 0 0 113px;
+    float: left;
+    text-align: center;
+}
+
+.order_method_body .step1 .content ul li img {
+    margin: 0 0 24px;
+}
+
+.order_method_body .step1 .content ul li .tit {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.order_method_body .step1 .content ul li .txt {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.order_method_body .step2 {
+    padding: 70px 680px 70px;
+    margin: 0 -680px;
+    background-color: white;
+    background-image: url('img/order_method_step2_back.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.order_method_body .step2 .content ul li {
+    width: 240px;
+    height: 239px;
+    padding: 28px 0 0;
+    margin: 0 20px 20px 0;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+
+.order_method_body .step2 .content ul li .tit {
+    font-size: 18px;
+    margin: 0 0 2px;
+}
+
+.order_method_body .step2 .content ul li .txt {
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+.order_method_body .step2 .content ul li img {
+    margin: 0 0 15px;
+}
+
+.order_method_body .step2 .content ul li .txt:last-child {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.order_method_body .step3 {
+    margin: 70px 0;
+}
+
+.order_method_body .step3 dl:first-child {
+    margin: 0;
+}
+
+.order_method_body .step3 dl {
+    padding: 0 0 0 119px;
+    margin: 52px 0 0;
+    position: relative;
+}
+
+.order_method_body .step3 dl dt {
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
 }
