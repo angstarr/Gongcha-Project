@@ -169,6 +169,58 @@ dl, dt, dd {
     color:#983b43;
 }
 
+
+/*   트랜스폼 start*/
+
+.n-motion.n-bottom.n-active {
+    transform: translateY(0);
+}
+
+.n-motion.n-active {
+    filter:alpha(opacity=100);
+    opacity: 1;
+}
+
+.n-motion.n-bottom {
+    transform: translateY(50px);
+}
+
+.n-motion {
+    filter:alpha(opacity=0);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+
+.n-motion.n-left.n-active {
+    transform: translateX(0);
+}
+
+.n-motion.n-left {
+    transform: translateX(-50px);
+}
+
+.n-motion.n-right.n-active {
+    transform: translateX(0);
+}
+
+.n-motion.n-right {
+    transform: translateX(50px);
+}
+
+.n-motion.n-spin.n-active {
+    transform: rotate(0deg);
+}
+
+.n-motion.n-spin {
+    transform: rotate(180deg);
+}
+
+
+
+/*  트랜스폼  end */
+
+
 #wrap{
   width:100%;
   min-width: 1200px;
