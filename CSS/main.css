@@ -1731,9 +1731,8 @@ text-align: center;
     height: auto;
 }
 
-.drink_list_wrap ul li a .img:after {
+.drink_list_wrap ul li a .img .img_plus {
     display: block;
-    content: '자세히보기';
     width: 156px;
     height: 156px;
     background-image: url('img/pro_list_detail.png');
@@ -1745,7 +1744,7 @@ text-align: center;
     margin: -78px 0 0 -78px;
     opacity: 0;
     text-indent: -9999px;
-    z-index: 4;
+    z-index: 10;
 }
 
 .drink_list_wrap ul li a .txt {
@@ -1759,4 +1758,8 @@ text-align: center;
 
 .season_list_wrap:last-child {
     margin: 0;
+}
+
+.drink_list_wrap ul li a:hover .img_plus {
+    opacity: 1;
 }
