@@ -172,48 +172,56 @@ dl, dt, dd {
 
 /*   트랜스폼 start*/
 
-.n-motion.n-bottom.n-active {
-    transform: translateY(0);
+.n-motion {
+    filter:alpha(opacity=0);
+    opacity:0;
+    transition-property:all;
+    transition-duration:0.6s;
+}
+
+.n-motion.n-left {
+    transform:translateX(-50px);
+}
+
+.n-motion.n-right {
+    transform:translateX(50px);
+}
+
+.n-motion.n-top {
+    transform:translateY(-50px);
+}
+
+.n-motion.n-bottom {
+    transform:translateY(50px);
+}
+
+.n-motion.n-spin {
+    transform:rotate(180deg);
 }
 
 .n-motion.n-active {
     filter:alpha(opacity=100);
-    opacity: 1;
-}
-
-.n-motion.n-bottom {
-    transform: translateY(50px);
-}
-
-.n-motion {
-    filter:alpha(opacity=0);
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 0.6s;
+    opacity:1;
 }
 
 .n-motion.n-left.n-active {
-    transform: translateX(0);
-}
-
-.n-motion.n-left {
-    transform: translateX(-50px);
+    transform:translateX(0);
 }
 
 .n-motion.n-right.n-active {
-    transform: translateX(0);
+    transform:translateX(0);
 }
 
-.n-motion.n-right {
-    transform: translateX(50px);
+.n-motion.n-top.n-active {
+    transform:translateY(0);
+}
+
+.n-motion.n-bottom.n-active {
+    transform:translateY(0);
 }
 
 .n-motion.n-spin.n-active {
-    transform: rotate(0deg);
-}
-
-.n-motion.n-spin {
-    transform: rotate(180deg);
+    transform:rotate(0deg);
 }
 
 
@@ -1814,3 +1822,66 @@ text-align: center;
 .drink_list_wrap ul li a:hover .img_plus {
     opacity: 1;
 }
+
+/* TEA RECIPE start */
+
+.tea_recipe_wrap {
+    margin: -60px 0 -40px;
+}
+
+.tea_recipe_wrap ul li:first-child {
+    border-top: none;
+}
+
+.tea_recipe li {
+    border-top: 1px solid black;
+}
+
+.tea_recipe li .info {
+    display: table-cell;
+    width: 400px;
+    vertical-align: middle;
+}
+
+.tea_recipe li .info .tit {
+    margin-bottom: 0 0 20px 0;
+}
+
+.tea_recipe li .info .tit .red {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tea_recipe li .info .txt {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 0 46px 0;
+}
+
+.tea_recipe li .info .btn {
+    display: block;
+    box-sizing: border-box;
+    width: 167px;
+    height: 38px;
+    border: 1px solid #993b42;
+    text-align: center;
+}
+
+.tea_recipe li .info .btn span {
+    display: inline-block;
+    padding: 0 15px 0 0;
+    background: url('img/btn_arr_red.png') right center no-repeat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    color: #993b42;
+}
+
+.tea_recipe li .visual {
+    display: table-cell;
+    width: 800px;
+    vertical-align: middle;
+    padding: 70px 0;
+}
+/* TEA RECIPE END*/
