@@ -172,50 +172,57 @@ dl, dt, dd {
 
 /*   트랜스폼 start*/
 
-.n-motion.n-bottom.n-active {
-    transform: translateY(0);
+.n-motion {
+    filter:alpha(opacity=0);
+    opacity:0;
+    transition-property:all;
+    transition-duration:0.6s;
+}
+
+.n-motion.n-left {
+    transform:translateX(-50px);
+}
+
+.n-motion.n-right {
+    transform:translateX(50px);
+}
+
+.n-motion.n-top {
+    transform:translateY(-50px);
+}
+
+.n-motion.n-bottom {
+    transform:translateY(50px);
+}
+
+.n-motion.n-spin {
+    transform:rotate(180deg);
 }
 
 .n-motion.n-active {
     filter:alpha(opacity=100);
-    opacity: 1;
-}
-
-.n-motion.n-bottom {
-    transform: translateY(50px);
-}
-
-.n-motion {
-    filter:alpha(opacity=0);
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 0.6s;
+    opacity:1;
 }
 
 .n-motion.n-left.n-active {
-    transform: translateX(0);
-}
-
-.n-motion.n-left {
-    transform: translateX(-50px);
+    transform:translateX(0);
 }
 
 .n-motion.n-right.n-active {
-    transform: translateX(0);
+    transform:translateX(0);
 }
 
-.n-motion.n-right {
-    transform: translateX(50px);
+.n-motion.n-top.n-active {
+    transform:translateY(0);
+}
+
+.n-motion.n-bottom.n-active {
+    transform:translateY(0);
 }
 
 .n-motion.n-spin.n-active {
-    transform: rotate(0deg);
+    transform:rotate(0deg);
 }
-
-.n-motion.n-spin {
-    transform: rotate(180deg);
-}
-
 
 
 /*  트랜스폼  end */
@@ -1815,3 +1822,288 @@ text-align: center;
 .drink_list_wrap ul li a:hover .img_plus {
     opacity: 1;
 }
+
+/* TEA RECIPE start */
+
+.tea_recipe_wrap {
+    margin: -60px 0 -40px;
+}
+
+.tea_recipe_wrap ul li:first-child {
+    border-top: none;
+}
+
+.tea_recipe li {
+    border-top: 1px solid black;
+}
+
+.tea_recipe li .info {
+    display: table-cell;
+    width: 400px;
+    vertical-align: middle;
+}
+
+.tea_recipe li .info .tit {
+    margin-bottom: 0 0 20px 0;
+}
+
+.tea_recipe li .info .tit .red {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tea_recipe li .info .txt {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 0 46px 0;
+}
+
+.tea_recipe li .info .btn {
+    display: block;
+    box-sizing: border-box;
+    width: 167px;
+    height: 38px;
+    border: 1px solid #993b42;
+    text-align: center;
+}
+
+.tea_recipe li .info .btn span {
+    display: inline-block;
+    padding: 0 15px 0 0;
+    background: url('img/btn_arr_red.png') right center no-repeat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    color: #993b42;
+}
+
+.tea_recipe li .visual {
+    display: table-cell;
+    width: 800px;
+    vertical-align: middle;
+    padding: 70px 0;
+}
+/* TEA RECIPE END*/
+
+/* TEA STORY START */
+
+.tea_story {
+    width: 1260px;
+    margin: 0 0 -80px;
+    overflow: hidden;
+}
+
+.tea_story > li {
+    width: 570px;
+    padding-bottom: 30px;
+    margin: 0 60px 80px 0;
+    border-bottom: 1px solid #e4e4e4;
+    float: left;
+}
+
+.tea_story > li .hgroup {
+    margin: 0 0 34px;
+}
+
+.tea_story > li.tea1 .hgroup .tit {
+    background: url('img/tea-story/tea_story_bullet1.png') 0 center no-repeat;
+}
+
+.tea_story > li.tea2 .hgroup .tit {
+    background: url('img/tea-story/tea_story_bullet2.png') 0 center no-repeat;
+}
+
+.tea_story > li.tea3 .hgroup .tit {
+    background: url('img/tea-story/tea_story_bullet3.png') 0 center no-repeat;
+}
+
+.tea_story > li.tea4 .hgroup .tit {
+    background: url('img/tea-story/tea_story_bullet4.png') 0 center no-repeat;
+}
+
+.tea_story > li .hgroup .tit {
+    padding: 0 0 0 29px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    color: black;
+    margin: 0 0 24px;
+    text-align: left;
+}
+
+.tea_story > li.tea1 .hgroup .tit .teaName {
+    color: #809d14;
+}
+
+.tea_story > li.tea2 .hgroup .tit .teaName {
+    color: #d19e00;
+}
+
+.tea_story > li.tea3 .hgroup .tit .teaName {
+    color: #b27b29;
+}
+
+.tea_story > li.tea4 .hgroup .tit .teaName {
+    color: #d6800c;
+}
+
+.tea_story > li .hgroup .tit .teaName {
+    margin: 0 0 0 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.tea_story > li .hgroup .txt {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.tea_story > li .content {
+    height: 267px;
+    padding: 27px 0 0 240px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tea_story > li .content .visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tea_story > li .content .info .stat {
+    overflow: hidden;
+    margin: 0 0 16px;
+}
+
+.tea_story > li .content .info .stat span:first-child {
+    margin: 0;
+}
+
+.tea_story > li .content .info .stat span {
+    display: block;
+    float: left;
+    margin: 0 0 0 41px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #666666;
+    position: relative;
+}
+
+.tea_story > li .content .info .stat span strong {
+    margin: 0 5px 0 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #222222;
+}
+
+.tea_story > li .content .info .stat span:first-child:before {
+    display:none;
+}
+
+.tea_story > li .content .info .stat span:before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 14px;
+    background: #ababab;
+    position: absolute;
+    top: 6px;
+    left: -21px;
+}
+
+.tea_story > li .content .info ul {
+    padding: 0;
+}
+
+.tea_story > li .content .info .effi {
+    height: 52px;
+    padding: 0 0 0 55px;
+    margin: 0 0 26px;
+    position: relative;
+    font-size: 16px;
+    line-height: 26px;
+    color: #666666;
+}
+
+.tea_story > li .content .info .effi strong {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #222222;
+}
+
+.tea_story > li .content .info .taste li {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tea_story > li .content .info .taste li .tit {
+    display: block;
+    width: 94px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 36px;
+    color: #222222;
+    float: left;
+    margin: 0;
+}
+
+.tea_story > li .content .info .taste li .circle {
+    width: 70px;
+    height: 10px;
+    padding: 13px 0;
+    margin: 0 0 0 19px;
+    float: left;
+    background: url('img/tea-story/tea_story_circle.png') 0 center no-repeat;
+}
+
+.tea_story > li.tea1 .content .info .taste li .circle em {
+    background: url('img/tea-story/tea_story_circle1.png') 0 0 no-repeat;
+}
+
+.tea_story > li.tea2 .content .info .taste li .circle em {
+    background: url('img/tea-story/tea_story_circle2.png') 0 0 no-repeat;
+}
+
+.tea_story > li.tea3 .content .info .taste li .circle em {
+    background: url('img/tea-story/tea_story_circle3.png') 0 0 no-repeat;
+}
+
+.tea_story > li.tea4 .content .info .taste li .circle em {
+    background: url('img/tea-story/tea_story_circle4.png') 0 0 no-repeat;
+}
+
+.tea_story > li .content .info .taste li .circle em:first-child {
+    margin: 0;
+}
+
+.tea_story > li .content .info .taste li .circle em {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 0 0 5px;
+    float: left;
+}
+
+.tea_story > li .content .info .taste li .circle em.half {
+    width: 5px;
+}
+
+.tea_story > li .content .info .taste li .val {
+    display: block;
+    margin: 0 0 0 15px;
+    font-size: 16px;
+    line-height: 36px;
+    color: #666666;
+    float: left;
+}
+/* TEA STORY END */
