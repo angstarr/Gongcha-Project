@@ -1910,6 +1910,18 @@ text-align: center;
     background: url('img/tea-story/tea_story_bullet1.png') 0 center no-repeat;
 }
 
+.tea_story > li.tea2 .hgroup .tit {
+    background: url('img/tea-story/tea_story_bullet2.png') 0 center no-repeat;
+}
+
+.tea_story > li.tea3 .hgroup .tit {
+    background: url('img/tea-story/tea_story_bullet3.png') 0 center no-repeat;
+}
+
+.tea_story > li.tea4 .hgroup .tit {
+    background: url('img/tea-story/tea_story_bullet4.png') 0 center no-repeat;
+}
+
 .tea_story > li .hgroup .tit {
     padding: 0 0 0 29px;
     font-weight: 700;
@@ -1922,6 +1934,18 @@ text-align: center;
 
 .tea_story > li.tea1 .hgroup .tit .teaName {
     color: #809d14;
+}
+
+.tea_story > li.tea2 .hgroup .tit .teaName {
+    color: #d19e00;
+}
+
+.tea_story > li.tea3 .hgroup .tit .teaName {
+    color: #b27b29;
+}
+
+.tea_story > li.tea4 .hgroup .tit .teaName {
+    color: #d6800c;
 }
 
 .tea_story > li .hgroup .tit .teaName {
@@ -1992,6 +2016,10 @@ text-align: center;
     left: -21px;
 }
 
+.tea_story > li .content .info ul {
+    padding: 0;
+}
+
 .tea_story > li .content .info .effi {
     height: 52px;
     padding: 0 0 0 55px;
@@ -2042,6 +2070,18 @@ text-align: center;
     background: url('img/tea-story/tea_story_circle1.png') 0 0 no-repeat;
 }
 
+.tea_story > li.tea2 .content .info .taste li .circle em {
+    background: url('img/tea-story/tea_story_circle2.png') 0 0 no-repeat;
+}
+
+.tea_story > li.tea3 .content .info .taste li .circle em {
+    background: url('img/tea-story/tea_story_circle3.png') 0 0 no-repeat;
+}
+
+.tea_story > li.tea4 .content .info .taste li .circle em {
+    background: url('img/tea-story/tea_story_circle4.png') 0 0 no-repeat;
+}
+
 .tea_story > li .content .info .taste li .circle em:first-child {
     margin: 0;
 }
@@ -2052,6 +2092,10 @@ text-align: center;
     height: 10px;
     margin: 0 0 0 5px;
     float: left;
+}
+
+.tea_story > li .content .info .taste li .circle em.half {
+    width: 5px;
 }
 
 .tea_story > li .content .info .taste li .val {
