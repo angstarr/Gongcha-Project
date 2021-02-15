@@ -2115,4 +2115,94 @@ text-align: center;
     background-repeat: no-repeat;
 }
 
+.benefit_nav ul {
+    padding: 0;
+    margin: 0;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.benefit_nev ul li {
+    display: table-cell;
+}
+
+.benefit_nav ul li a {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #c20f2f;
+    line-height: 47px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+    border-bottom: 3px solid #c20f2f;
+    position: relative;
+}
+
+.benefit_nav ul li a:after {
+    display: block;
+    content: '';
+    width: 14px;
+    height: 7px;
+    background: url('img/tab_style1_arr.png') 0 0 no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin: 0 0 0 -7px;
+}
+
+.benefit_head {
+    display: inline-block;
+    width: 100%;
+    margin-bottom : 130px;
+}
+
+.benefit_head .visual {
+    width: 600px;
+    height: 215px;
+    float:left;
+    text-align: center;
+}
+
+.benefit_head .visual img {
+    width: 340px;
+    height: 215px;
+}
+
+.benefit_head .info {
+    width: 600px;
+    float: right;
+}
+
+.benefit_head .info .tit {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 0 24px 0;
+}
+
+.benefit_head .info dl {
+    line-height: 30px;
+}
+
+.benefit_head .info dt {
+    font-weight: 700;
+    padding: 0 0 0 12px;
+    background: url('img/bullet1.png') 0 center no-repeat;
+}
+
+.benefit_head .info dl dd {
+    padding: 0 0 0 12px;
+    color: gray;
+}
+
+.benefit_head .info dl dd .red {
+    font-size: 20px;
+    font-weight: 700;
+    color: #c20f2f;
+}
+
+.benefit_head .info dl dd strong {
+    color: black;
+}
 /* BENEFIT END */
