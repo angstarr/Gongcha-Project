@@ -139,7 +139,7 @@ select {
     background-color: white;
     font-size: 16px;
     line-height: 20px;
-    color: gray;
+    color: #666666;
     box-sizing: border-box;
 
 }
@@ -156,7 +156,7 @@ input[type=text] {
     background-color: white;
     font-size: 16px;
     line-height: 20px;
-    color: gray;
+    color: #666666;
     box-sizing: border-box;
 
 }
@@ -246,7 +246,7 @@ dl, dt, dd {
   margin-bottom:10px;
 }
 .tit5{
-  color:gray;
+  color:#666666;
   margin:0;
 }
 .txt{
@@ -254,7 +254,7 @@ dl, dt, dd {
   font-weight: 700;
   font-size:22px;
   line-height: 30px;
-  color:gray;
+  color:#666666;
 }
 .per_text{
   margin-top:28px;
@@ -297,7 +297,7 @@ dl, dt, dd {
   display:inline-block;
   font-size: 14px;
   font-weight: 600;
-  color:gray;
+  color:#666666;
   weight:95px;
   line-height: 95px;
   margin-left:30px;
@@ -536,7 +536,7 @@ ol, ul, li{
   font-weight: 700;
   font-size: 13px;
   line-height: 50px;
-  color:gray;
+  color:#666666;
   text-align: center;
 }
 /* .visual_menu a:active{  자바스크립트 배워서 액티브 유지시키기
@@ -648,7 +648,7 @@ ol, ul, li{
   width:auto;
   font-size:15px;
   line-height: 25px;
-  color:gray;
+  color:#666666;
   vertical-align: top;
 }
 
@@ -703,8 +703,8 @@ ol, ul, li{
   line-height: 17px;
   top:30px;
   right:30px;
-  color:gray;
-  border-bottom: 1px solid gray;
+  color:#666666;
+  border-bottom: 1px solid #666666;
 }
 .info_txt{
   display:block;
@@ -768,7 +768,7 @@ ol, ul, li{
   font-weight: normal;
   line-height: 25px;
   left:0;
-  color:gray;
+  color:#666666;
   margin:0 0 25px;
   position:relative;
 }
@@ -880,7 +880,7 @@ ol, ul, li{
   position: absolute;
   top:4px;
   left:-20px;
-  background-color:gray;
+  background-color:#666666;
 }
 .ft_center{
   font-weight: 700;
@@ -901,7 +901,7 @@ ol, ul, li{
   font-weight: 500;
   font-size:13px;
   line-height: 22px;
-  color:gray;
+  color:#666666;
 }
 .address{
   position:absolute;
@@ -917,7 +917,7 @@ ol, ul, li{
   display:block;
   float:left;
   margin:0 0 0 31px;
-  color:gray;
+  color:#666666;
   position:relative;
 }
 .address span:first-child:before{
@@ -931,7 +931,7 @@ ol, ul, li{
   position: absolute;
   top:4px;
   left: -15px;
-  background-color:gray;
+  background-color:#666666;
 }
 /*ㅡㅡㅡㅡㅡㅡBrand storyㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 #pagetop{
@@ -1066,7 +1066,7 @@ ol, ul, li{
   font-size: 16px;
   line-height: 26px;
   font-weight: normal;
-  color:gray;
+  color:#666666;
   margin:0 0 46px;
   text-align:center;
 }
@@ -1102,20 +1102,20 @@ ol, ul, li{
 }
 .brand_story_body ul li .left .txt1{
   font-size:18px;
-  color:gray;
+  color:#666666;
   margin:0 0 20px;
 }
 .brand_story_body ul li .left .txt2{
   font-weight: 700;
   font-size:18px;
   line-height: 28px;
-  color:gray;
+  color:#666666;
 }
 .brand_story_body ul li .right .txt{
   font-weight: normal;
   font-size:15px;
   line-height: 26px;
-  color:gray;
+  color:#666666;
 }
 .brand_story_body ul{
   list-style:none;
@@ -1149,7 +1149,7 @@ ol, ul, li{
 }
 /* -------브랜드 약속 --------*/
 .promise_info{
-  color:gray;
+  color:#666666;
   margin: 0 0 30px;
 }
 .promise_info .tit{
@@ -1248,7 +1248,7 @@ ol, ul, li{
   font-size:15px;
   font-weight: normal;
   line-height: 26px;
-  color:gray;
+  color:#666666;
   margin:20px 0 0;
 }
 .brand_promise_body ol li .img{
@@ -1294,7 +1294,7 @@ ol, ul, li{
   font-size:16px;
   font-weight: normal;
   line-height: 26px;
-  color:gray;
+  color:#666666;
 }
 
 .identity_body ul li{
@@ -1311,7 +1311,7 @@ ol, ul, li{
   padding: 70px 0 70px 340px;
   position: relative;
   overflow:hidden;
-  border-top:1px solid gray;
+  border-top:1px solid #666666;
 }
 .identity_list > li .hgroup{
   width:340px;
@@ -1329,7 +1329,7 @@ ol, ul, li{
 }
 .identity_list > li .hgroup .txt{
   font-size:16px;
-  color:gray;
+  color:#666666;
 }
 .identity_list > li .visual{
   width:432px;
@@ -1342,7 +1342,7 @@ ol, ul, li{
 .identity_list > li .info2 .txt{
   font-size:16px;
   line-height: 26px;
-  color:gray;
+  color:#666666;
 }
 .mb10{
   margin-bottom:10px !important;
@@ -1377,7 +1377,7 @@ ol, ul, li{
 }
 .identity_list > li .patterns li .txt{
   font-size:14px;
-  color:gray;
+  color:#666666;
 letter-spacing: -0.05em;
 text-align: center;
 }
@@ -1388,7 +1388,7 @@ text-align: center;
 .identity_list > li .info3 .txt{
   font-size:16px;
   line-height: 26px;
-  color:gray;
+  color:#666666;
 }
 
 /* global  */
@@ -1416,7 +1416,7 @@ text-align: center;
   font-weight: normal;
   font-size:16px;
   line-height: 26px;
-  color:gray;
+  color:#666666;
   margin:0 0 26px;
 }
 
@@ -1455,7 +1455,7 @@ text-align: center;
   font-weight: normal;
   font-size:16px;
   line-height: 26px;
-  color:gray;
+  color:#666666;
   margin:22px 0 0;
 }
 
@@ -1537,7 +1537,7 @@ text-align: center;
 .order_method_head .txt {
     font-weight: normal;
     font-size: 16px;
-    color: gray;
+    color: #666666;
     margin: 0;
     line-height: 1.5;
 }
@@ -2193,7 +2193,7 @@ text-align: center;
 
 .benefit_head .info dl dd {
     padding: 0 0 0 12px;
-    color: gray;
+    color: #666666;
 }
 
 .benefit_head .info dl dd .red {
@@ -2204,5 +2204,57 @@ text-align: center;
 
 .benefit_head .info dl dd strong {
     color: black;
+}
+
+.benefit_body ul {
+    padding: 0;
+    border-top: 1px solid black;
+}
+
+.benefit_body ul li:first-child{
+    border:none;
+}
+
+.benefit_body ul li {
+    padding: 36px 0 36px 186px;
+    border-top: 1px solid #e4e4e4;
+    position:relative;
+}
+
+.benefit_body ul li .tit {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    position: absolute;
+    top: 36px;
+    left: 0;
+}
+
+.benefit_body ul li .txt {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.benefit_body .bnf_list_wrap {
+    overflow: hidden;
+}
+
+.benefit_body .bnfList_1 {
+    float: left;
+    width: 550px;
+}
+
+.bnfList_1 dt {
+    background: url('img/bullet1.png') 0 center no-repeat;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    padding: 0 0 0 12px;
+}
+
+.bnfList_1 dd {
+    padding: 0 0 0 12px;
+    color: #666666;
+    line-height: 26px;
 }
 /* BENEFIT END */
