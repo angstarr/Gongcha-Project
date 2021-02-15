@@ -495,9 +495,8 @@ ol, ul, li{
   margin:0 auto;
 }
 #main_visual{
-  width:100%;
-  height:450px;
-  background-image: url('img/smoothie.jpg');
+  height: 850px;
+  margin: 0 -680px;
   position:relative;
 }
 #main_contents{
@@ -511,6 +510,39 @@ ol, ul, li{
   margin:0 -680px;
   background-color: white;
 }
+
+.bx-wrapper {
+    max-width: 100%;
+    position: relative;
+}
+
+.bx-viewport {
+    height: 850px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.bx-slider {
+    width: 615%;
+    position: relative;
+}
+
+.bx-slider li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 2560px;
+}
+
+.main_visual .box-slider li {
+    text-align: center;
+}
+
+.main_visual .box-slider li img {
+    height: 850px;
+}
+
 .visual_menu{
   display:table;
   table-layout: fixed;
@@ -522,14 +554,17 @@ ol, ul, li{
   list-style: none;
   padding:0;
 }
-.visual_menu li:first-child{
+
+.visual_menu li:first-child {
   padding:0;
 }
-.visual_menu li{
+
+.visual_menu li {
   display:table-cell;
   padding: 0 0 0 1px;
 }
-.visual_menu a{
+
+.visual_menu a {
   display:block;
   height:50px;
   background-color: white;
@@ -539,15 +574,18 @@ ol, ul, li{
   color:#666666;
   text-align: center;
 }
+
 /* .visual_menu a:active{  자바스크립트 배워서 액티브 유지시키기
   background-color: #983b43;
   color:white;
 } */
-.visual_menu a:hover{
+
+.visual_menu a:hover {
   background-color: #983b43;
   color:white;
 }
-.section1{
+
+.section1 {
   width:800px;
   height:386px;
   padding:50px 40px 0;
