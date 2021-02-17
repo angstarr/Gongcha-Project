@@ -2240,6 +2240,10 @@ text-align: center;
     color: #c20f2f;
 }
 
+.realRed {
+    color: #c20f2f;
+}
+
 .benefit_head .info dl dd strong {
     color: black;
 }
@@ -2305,12 +2309,14 @@ text-align: center;
 
 .renewal_txt {
     padding: 0 0 0 250px;
+    margin: 0 0 100px 0;
 }
 
 .renewal_txt .tit {
     font-size: 64px;
     font-weight: normal;
     line-height: 76px;
+    margin: 0;
 }
 
 .renewal_txt .tit .realRed {
@@ -2318,16 +2324,13 @@ text-align: center;
     color: #c20f2f;
 }
 
-/* .renewal_date_wrap {
-    position: relative;
-} */
-
 .renewal_dateBx {
     text-align: center;
     height: 140px;
     background: #c20f2f;
     color: #e4e4e4;
     position: relative;
+    margin: 0 0 60px 0;
 }
 
 .renewal_dateBx .tit {
@@ -2355,5 +2358,19 @@ text-align: center;
     margin: 0;
 }
 
+.renewal_body {
+    padding: 0 0 0 250px;
+}
 
+.renewal_body .txt:first-child {
+    color: #000;
+}
+
+.renewal_body .txt {
+    font-weight: normal;
+    color: #555555;
+    font-size: 26px;
+    line-height: 40px;
+    margin: 0;
+}
 /* MEMBERSHIP END */
