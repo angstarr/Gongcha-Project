@@ -495,9 +495,8 @@ ol, ul, li{
   margin:0 auto;
 }
 #main_visual{
-  width:100%;
-  height:450px;
-  background-image: url('img/smoothie.jpg');
+  height: 850px;
+  margin: 0 -680px;
   position:relative;
 }
 #main_contents{
@@ -511,6 +510,39 @@ ol, ul, li{
   margin:0 -680px;
   background-color: white;
 }
+
+.bx-wrapper {
+    max-width: 100%;
+    position: relative;
+}
+
+.bx-viewport {
+    height: 850px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.bx-slider {
+    width: 615%;
+    position: relative;
+}
+
+.bx-slider li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 2560px;
+}
+
+.main_visual .box-slider li {
+    text-align: center;
+}
+
+.main_visual .box-slider li img {
+    height: 850px;
+}
+
 .visual_menu{
   display:table;
   table-layout: fixed;
@@ -522,14 +554,17 @@ ol, ul, li{
   list-style: none;
   padding:0;
 }
-.visual_menu li:first-child{
+
+.visual_menu li:first-child {
   padding:0;
 }
-.visual_menu li{
+
+.visual_menu li {
   display:table-cell;
   padding: 0 0 0 1px;
 }
-.visual_menu a{
+
+.visual_menu a {
   display:block;
   height:50px;
   background-color: white;
@@ -539,15 +574,18 @@ ol, ul, li{
   color:#666666;
   text-align: center;
 }
+
 /* .visual_menu a:active{  자바스크립트 배워서 액티브 유지시키기
   background-color: #983b43;
   color:white;
 } */
-.visual_menu a:hover{
+
+.visual_menu a:hover {
   background-color: #983b43;
   color:white;
 }
-.section1{
+
+.section1 {
   width:800px;
   height:386px;
   padding:50px 40px 0;
@@ -2196,9 +2234,13 @@ text-align: center;
     color: #666666;
 }
 
-.benefit_head .info dl dd .red {
+.benefit_head .info dl dd .realRed {
     font-size: 20px;
     font-weight: 700;
+    color: #c20f2f;
+}
+
+.realRed {
     color: #c20f2f;
 }
 
@@ -2258,3 +2300,151 @@ text-align: center;
     line-height: 26px;
 }
 /* BENEFIT END */
+
+/* MEMBERSHIP END */
+
+.page_title.membership {
+    background: url('img/page_top_visual_membership.jpg') no-repeat;
+}
+
+.renewal_txt {
+    padding: 0 0 0 250px;
+    margin: 0 0 100px 0;
+}
+
+.renewal_txt .tit {
+    font-size: 64px;
+    font-weight: normal;
+    line-height: 76px;
+    margin: 0;
+}
+
+.renewal_txt .tit .realRed {
+    font-weight: 700;
+    color: #c20f2f;
+}
+
+.renewal_dateBx {
+    text-align: center;
+    height: 140px;
+    background: #c20f2f;
+    color: #e4e4e4;
+    position: relative;
+    margin: 0 0 60px 0;
+}
+
+.renewal_dateBx .tit {
+    font-size: 34px;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 250px;
+}
+
+.renewal_dateBx .renewal_dateSubBx {
+    padding: 10px;
+    border: 2px solid #c20f2f;
+    border-radius: 30px;
+    background: #fff;
+    position: absolute;
+    box-sizing: border-box;
+    top: -26px;
+    left: 250px;
+}
+
+.renewal_dateBx .renewal_dateSubBx .txt {
+    font-size: 34px;
+    color: #c20f2f;
+    margin: 0;
+}
+
+.renewal_body {
+    padding: 0 0 0 250px;
+}
+
+.renewal_body .txt:first-child {
+    color: #000;
+}
+
+.renewal_body .txt {
+    font-weight: normal;
+    color: #555555;
+    font-size: 26px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.renewal_expectBx {
+    display: inline-block;
+    border: 4px solid #c20f2f;
+    margin: 80px 0 0 250px;
+    padding: 15px 110px;
+    font-size: 32px;
+    color: #c20f2f;
+    text-align: center;
+}
+
+.membership_support ul {
+    padding: 70px 0 0 0;
+}
+
+.membership_support ul > li:first-child {
+    border-top: none;
+}
+
+.membership_support ul > li {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 70px 0 0 340px;
+    position: relative;
+    border-top: 1px solid #444444;
+
+}
+
+.membership_support ul > li .hgroup {
+    width: 340px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+.membership_support ul > li .hgroup .tit {
+    text-align: left;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.faq_box {
+    width: 400px;
+    float: left;
+}
+
+.faq_box_top {
+    border-bottom: 1px solid #000;
+    margin: 0 0 20px;
+    padding: 0 0 12px;
+}
+
+.faq_box_top .tit {
+    padding: 0 0 0 39px;
+    margin: 0;
+    font-size: 20px;
+    color: #993b42;
+    background: url('img/center_icon.png') 3px 0 no-repeat;
+    line-height: normal;
+}
+
+.faq_box_bot .txt {
+    font-weight: normal;
+    font-size : 16px;
+    line-height: 26px;
+    color: #666666;
+}
+
+.faq_box_bot .txt .tel {
+    font-weight: 700;
+    color: #000;
+}
+
+/* MEMBERSHIP END */
