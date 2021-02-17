@@ -2384,5 +2384,67 @@ text-align: center;
     text-align: center;
 }
 
+.membership_support ul {
+    padding: 70px 0 0 0;
+}
+
+.membership_support ul > li:first-child {
+    border-top: none;
+}
+
+.membership_support ul > li {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 70px 0 0 340px;
+    position: relative;
+    border-top: 1px solid #444444;
+
+}
+
+.membership_support ul > li .hgroup {
+    width: 340px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+.membership_support ul > li .hgroup .tit {
+    text-align: left;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.faq_box {
+    width: 400px;
+    float: left;
+}
+
+.faq_box_top {
+    border-bottom: 1px solid #000;
+    margin: 0 0 20px;
+    padding: 0 0 12px;
+}
+
+.faq_box_top .tit {
+    padding: 0 0 0 39px;
+    margin: 0;
+    font-size: 20px;
+    color: #993b42;
+    background: url('img/center_icon.png') 3px 0 no-repeat;
+    line-height: normal;
+}
+
+.faq_box_bot .txt {
+    font-weight: normal;
+    font-size : 16px;
+    line-height: 26px;
+    color: #666666;
+}
+
+.faq_box_bot .txt .tel {
+    font-weight: 700;
+    color: #000;
+}
 
 /* MEMBERSHIP END */
