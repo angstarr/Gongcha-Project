@@ -2296,3 +2296,11 @@ text-align: center;
     line-height: 26px;
 }
 /* BENEFIT END */
+
+/* MEMBERSHIP END */
+
+.page_title.membership {
+    background: url('img/page_top_visual_membership.jpg') no-repeat;
+}
+
+/* MEMBERSHIP END */
