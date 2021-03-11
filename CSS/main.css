@@ -483,7 +483,7 @@ ol, ul, li{
   right:30px;
   width:79px;
   margin:-230px 0 0;
-  z-index: 1;
+  z-index: 3;
 }
 #container{
   /* width: 100%; */
@@ -567,6 +567,38 @@ ol, ul, li{
   outline: 0;
   text-indent: -9999px;
 }
+
+.bx-slider li .btn_brandstory {
+    display: block;
+    width: 230px;
+    height: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 1320px;
+    bottom: 110px;
+    margin: 0 -600px 0 0;
+    border: 1px solid #cf3e58;
+    text-align: center;
+}
+
+.bx-slider li a:hover {
+    background: #cf3e58;
+}
+
+.bx-slider li a:hover span {
+    color: white;
+}
+
+.bx-slider li .btn_brandstory span {
+    display: inline-block;
+    padding: 0 20px 0 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 48px;
+    color: #cf3e58;
+    background: url('img/btn_arr_red.png') right center no-repeat;
+}
+
 
 .visual_menu{
   display:table;
