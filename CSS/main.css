@@ -389,6 +389,7 @@ ol, ul, li{
   background-color: black;
   background-color: rgba( 0, 0, 0, 0.6);
 }
+
 .sub a:hover{
   font-size: 15px;
   font-weight: 600;
@@ -543,6 +544,30 @@ ol, ul, li{
     height: 850px;
 }
 
+.bx-control .bx-prev {
+  position: absolute;
+  top: 398px;
+  left: 680px;
+  width: 27px;
+  height: 53px;
+  background: url('img/prev.png') 0 0 no-repeat;
+}
+
+.bx-control .bx-next {
+  position: absolute;
+  top: 398px;
+  right: 680px;
+  width: 27px;
+  height: 53px;
+  background: url('img/next.png') 0 0 no-repeat;
+}
+
+.bx-control a {
+  display: block;
+  outline: 0;
+  text-indent: -9999px;
+}
+
 .visual_menu{
   display:table;
   table-layout: fixed;
@@ -625,6 +650,12 @@ ol, ul, li{
   /* background-image: url('comingsoon_1.jpg'); */
   position:relative;
 }
+
+.section4 ul {
+  margin: 0;
+  padding: 0;
+}
+
 .bx_control a{
   display:block;
   position: absolute;
@@ -2203,10 +2234,6 @@ text-align: center;
     text-align: center;
 }
 
-.benefit_head .visual img {
-    width: 340px;
-    height: 215px;
-}
 
 .benefit_head .info {
     width: 600px;
@@ -2448,3 +2475,124 @@ text-align: center;
 }
 
 /* MEMBERSHIP END */
+
+/* BENEFIT_PAYMENT START */
+
+.mb70 {
+    margin-bottom: 70px !important;
+}
+
+.tab_style1 ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.tab_style1 ul li:first-child {
+    padding: 0;
+}
+
+.tab_style1 ul li {
+    display: table-cell;
+}
+
+.tab_style1 ul li.on a {
+    color: #c20f2f;
+    border-color: #c20f2f;
+}
+
+.tab_style1 ul li a {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 47px;
+    color: #666666;
+    text-align: center;
+    border-bottom: 3px solid #e4e4e4;
+    position: relative;
+}
+
+.benefit_wrap > div.on {
+    display: block;
+}
+
+.benefit_wrap > div {
+    display: none;
+}
+
+.benefit_head {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 130px;
+}
+
+.benefit_head .visual {
+    width: 600px;
+    float: left;
+    text-align: center;
+}
+
+.benefit_head .info {
+    width: 600px;
+    float: right;
+    position: relative;
+}
+
+.benefit_head .info .tit {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: black;
+    margin: 0 0 24px;
+}
+
+.benefit_head .info dl dt:first-child {
+    margin: 0;
+}
+
+.benefit_head .info dl dt {
+    padding: 0 0 0 12px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #222222;
+    background: url('img/bullet1.png') 0 center no-repeat;
+}
+
+.benefit_head .info dl dt:last-child {
+    margin-top: 10px;
+}
+
+.benefit_body ul {
+    border-top: 1px solid #444444;
+}
+
+.benefit_body ul li:first-child {
+    border-top: none;
+}
+
+.benefit_body ul li {
+    padding: 36px 0 36px 186px;
+    border-top: 3px solid #e4e4e4;
+    position: relative;
+}
+
+.benefit_body ul li .tit {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #222222;
+    position: absolute;
+    top: 36px;
+    left: 0;
+}
+
+.benefit_body ul li .txt {
+    font-size: 16px;
+    line-height: 28px;
+    color: #666666;
+    margin: 0;
+}
+
+/* BENEFIT_PAYMENT END  */

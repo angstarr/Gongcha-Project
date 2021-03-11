@@ -6,6 +6,7 @@
     <title>공차</title>
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <script src="js/main.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -22,7 +23,8 @@
                 <a href="story.html">
                   <span class="english">Brand</span>
                 </a>
-                <ul class="sub">
+                <ul class="
+                sub">
                   <li><a href="story.html">브랜드 소개</a></li>
                   <li><a href="brand_promise.html">공차의 약속</a></li>
                   <li><a href="brand_identity.html">브랜드 아이덴티</a></li>
@@ -33,13 +35,13 @@
                 <ul class="sub">
                   <li><a href="menu_howtoorder.html">주문 방법</a></li>
                   <li><a href="menu_drink.html">음료</a></li>
-                  <li><a href="#">디저트</a></li>
-                  <li><a href="#">MD 상품</a></li>
+                  <li><a href="#self">디저트</a></li>
+                  <li><a href="#self">MD 상품</a></li>
                   <li><a href="menu_teaStory.html">티 스토리</a></li>
-                  <li><a href="#">티 레시피</a></li>
+                  <li><a href="#self">티 레시피</a></li>
                 </ul>
               </li>
-              <li class="eng"><a href="#">Store</a>
+              <li class="eng"><a href="find_store.html">Store</a>
                 <ul class="sub">
                   <li><a href="find_store.html">매장 찾기</a></li>
                 </ul>
@@ -47,29 +49,29 @@
               <li class="eng"><a href="membership.html">Membership</a>
                 <ul class="sub">
                   <li><a href="membership.html">공차 멤버십</a></li>
-                  <!-- <li><a href="#">멤버십 오더</a></li>
-                  <li><a href="#">멤버십 금액권</a></li>
-                  <li><a href="#">선물하기</a></li>
-                  <li><a href="#">FAQ</a></li> -->
+                  <!-- <li><a href="#self">멤버십 오더</a></li>
+                  <li><a href="#self">멤버십 금액권</a></li>
+                  <li><a href="#self">선물하기</a></li>
+                  <li><a href="#self">FAQ</a></li> -->
                 </ul>
               </li>
               <li class="eng"><a href="benefit.html">Benefit</a>
                 <ul class="sub">
                   <li><a href="benefit.html">통신사 제휴</a></li>
-                  <li><a href="#">결제 서비스</a></li>
+                  <li><a href="benefit_payment.html">결제 서비스</a></li>
                 </ul>
               </li>
-              <li class="eng"><a href="#">Event&News</a>
+              <li class="eng"><a href="#self">Event&News</a>
                 <ul class="sub">
-                  <li><a href="#">이벤트</a></li>
-                  <li><a href="#">공차 소식</a></li>
+                  <li><a href="#self">이벤트</a></li>
+                  <li><a href="#self">공차 소식</a></li>
                 </ul>
               </li>
             </ul>
           </div>
           <ul class="util">
             <li>
-              <a href="#">공지사항</a>
+              <a href="#self">공지사항</a>
             </li>
           </ul>
           <ul class="sns">
@@ -84,7 +86,7 @@
               </a>
             </li>
           </ul>
-          <a href="#" class="go_main" target="_blank">
+          <a href="#self" class="go_main" target="_blank">
             <span>
               가맹점
               <br>
@@ -119,14 +121,18 @@
                   </li>
                 </ul>
               </div>
+              <div class="bx-control">
+                <a href="#self" class="bx-prev">Prev</a>
+                <a href="#self" class="bx-next">Next</a>
+              </div>
             </div>
             <ol class="visual_menu">
-              <li><a href="#">쿠팡이츠 2천원 할인</a></li>
-              <li><a href="#">딸기&amp;쿠키 신메뉴</a></li>
-              <li><a href="#">딸기&amp;치즈 신메뉴</a></li>
-              <li><a href="#">NEW 베스트 콤비네이션</a></li>
-              <!-- <li><a href="#">타로&흑임자 시즌메뉴</a></li>
-              <li><a href="#">NEW 베스트 콤비네이션</a></li> -->
+              <li><a href="#self" data-slide-index="0">쿠팡이츠 2천원 할인</a></li>
+              <li><a href="#self" data-slide-index="1">딸기&amp;쿠키 신메뉴</a></li>
+              <li><a href="#self" data-slide-index="2">딸기&amp;치즈 신메뉴</a></li>
+              <li><a href="#self" data-slide-index="3">NEW 베스트 콤비네이션</a></li>
+              <!-- <li><a href="#self">타로&흑임자 시즌메뉴</a></li>
+              <li><a href="#self">NEW 베스트 콤비네이션</a></li> -->
             </ol>
           </div>
           <div id="main_contents">
@@ -145,7 +151,7 @@
                   공차의 대표 시그니처 메뉴를 만나보세요.
                 </h5>
                 <span class="sweet"><img src="css/img/sweet.png"></span>
-                <a href="#"><span class="view_more">더보기 ></span></a>
+                <a href="#self"><span class="view_more">더보기 ></span></a>
             </div>
             <div class="section2">
                 <h1 class="tit">매장검색</h1>
@@ -154,7 +160,7 @@
                    찾아보세요.
                 </p>
                 <input type="text" class="add" name="storename" id="storename" placeholder="매장명 또는 주소를 입력하세요">
-                <a href="#" class="btn">매장 검색하기</a>
+                <a href="#self" class="btn">매장 검색하기</a>
             </div>
             <div class="section3">
               <h2 class="tit2">
@@ -165,14 +171,26 @@
                 <br>
                 맞춤주문 가능합니다.
               </p>
-              <a href="#" class="see_more">자세히 보기 ></a>
+              <a href="#self" class="see_more">자세히 보기 ></a>
             </div>
             <div class="section4">
-              <div>
-                <a href="#">
-                  <img src="css/img/comingsoon_1.jpg" id="season" alt="시즌 이미지">
-                </a>
-              </div>
+              <ul>
+                <li>
+                  <a href="#self">
+                    <img src="css/img/comingsoon_1.jpg" id="season" alt="시즌 이미지">
+                  </a>
+                </li>
+                <li>
+                  <a href="#self">
+                    <img src="css/img/comingsoon_2.jpg" id="season" alt="시즌 이미지">
+                  </a>
+                </li>
+                <li>
+                  <a href="#self">
+                    <img src="css/img/comingsoon_3.jpg" id="season" alt="시즌 이미지">
+                  </a>
+                </li>
+              </ul>
               <div class="bx_control">
                 <a class="bx_prev"  onclick="bx_image_control(0)">&lt;</a>
                 <a class="bx_next"  onclick="bx_image_control(1)">&gt;</a>
@@ -184,7 +202,7 @@
               </h2>
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="#self">
                     <span class="sort">개설안내</span>
                     <span class="cont">
                       공차만의 프랜차이즈 운영
@@ -194,7 +212,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#self">
                     <span class="sort">FAQ</span>
                     <span class="cont">
                       가맹점 개설 관련한
@@ -204,28 +222,28 @@
                   </a>
                 </li>
               </ul>
-              <a href="#" target="_blank" class="btn">
+              <a href="#self" target="_blank" class="btn">
                 내용보기
               </a>
             </div>
             <div class="section6">
               <div class="banner">
-                <a href="#">
+                <a href="#self">
                   <img src="css/img/moonsang.jpg" alt="문화상품권 결제 서비스 안내">
                 </a>
                 <span class="info">
                   <span class="info_tit">문화상품권 결제 서비스 안내</span>
-                  <a href="#" class="info_see_more">자세히 보기  ></a>
+                  <a href="#self" class="info_see_more">자세히 보기  ></a>
                 </span>
               </div>
               <div class="banner">
-                <a href="#">
+                <a href="#self">
                   <img src="css/img/membership.jpg" alt="멤버십 오더 서비스">
                 </a>
                 <span class="info">
                   <span class="info_tit">멤버십 오더 서비스</span>
                   <span class="info_txt">지금 바로 확인해보세요!</span>
-                  <a href="#" class="info_see_more">자세히 보기  ></a>
+                  <a href="#self" class="info_see_more">자세히 보기  ></a>
                 </span>
               </div>
             </div>
@@ -235,15 +253,15 @@
               <div class="hgroup">
                 <h2 class="tit">공차 티 레시피</h2>
                 <ul class="tab">
-                  <li><a href="#">오리지널 티</a></li>
-                  <li><a href="#">밀크티</a></li>
-                  <li><a href="#">밀크폼&치즈폼</a></li>
-                  <li><a href="#">과일 그린티</a></li>
+                  <li><a href="#self">오리지널 티</a></li>
+                  <li><a href="#self">밀크티</a></li>
+                  <li><a href="#self">밀크폼&치즈폼</a></li>
+                  <li><a href="#self">과일 그린티</a></li>
                 </ul>
               </div>
               <ul class="recipe">
                 <li>
-                  <img src="css\brand_main_recipe_img1.jpg" alt class="img">
+                  <img src="css/img/brand_main_recipe_img1.jpg" alt class="img">
                   <p class="tit1">
                     TEA RECIPE - 티 레시피
                   </p>
@@ -255,7 +273,7 @@
                     <br>
                     다른 황금률로 우려 한 잔 한 잔 부드러움을 더해 만듭니다.
                   </p>
-                  <a href="#" class="btn">
+                  <a href="#self" class="btn">
                     <span>메뉴 보러가기</span>
                   </a>
                 </li>
@@ -274,12 +292,12 @@
           </div>
           <div class="footer_right">
             <ul class="ft_menu">
-              <li><a href="#">회사소개</a></li>
-              <li><a href="#">제휴/제안</a></li>
-              <li><a href="#">고객센터</a></li>
-              <li><a href="#">개인정보처리방침</a></li>
-              <li><a href="#">이메일무단수집거부</a></li>
-              <li><a href="#">사이트맵</a></li>
+              <li><a href="#self">회사소개</a></li>
+              <li><a href="#self">제휴/제안</a></li>
+              <li><a href="#self">고객센터</a></li>
+              <li><a href="#self">개인정보처리방침</a></li>
+              <li><a href="#self">이메일무단수집거부</a></li>
+              <li><a href="#self">사이트맵</a></li>
             </ul>
             <p class="ft_center">
               고객센터
