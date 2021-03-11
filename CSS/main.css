@@ -2595,4 +2595,19 @@ text-align: center;
     margin: 0;
 }
 
+.tab_style1 ul li.on a:after {
+    display: block;
+}
+
+.tab_style1 ul li a:after {
+    display: none;
+    content: '';
+    width: 14px;
+    height: 7px;
+    background: url('img/tab_style1_arr.png') 0 0 no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin: 0 0 0 -7px;
+}
 /* BENEFIT_PAYMENT END  */
