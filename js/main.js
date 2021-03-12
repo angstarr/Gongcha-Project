@@ -137,3 +137,19 @@ $(document).ready(function(){
     })
 
 });
+
+//이벤트에
+
+$(document).ready(function(){
+
+    $('ul.event_title li').click(function(){
+        var event_id = $(this).attr('data-event');
+
+        $('ul.event_title li').removeClass('on');
+        $('.event_content').removeClass('on');
+
+        $(this).addClass('on');
+        $("#"+event_id).addClass('on');
+    })
+
+});

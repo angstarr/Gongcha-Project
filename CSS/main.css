@@ -2815,3 +2815,74 @@ text-align: center;
     margin: 0 0 0 -7px;
 }
 /* BENEFIT_PAYMENT END  */
+
+/* EVENT START*/
+
+.page_title.event{
+  background-image: url('img/page_top_visual_event.jpg');
+  background-repeat: no-repeat;
+}
+
+.gallery_list li:first-child {
+    margin: 0;
+}
+
+.garllery_list li {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin: 60px 0 0;
+}
+
+.gallery_list li .imgs {
+    display: table-cell;
+    width: 700px;
+    height: 210px;
+}
+
+.gallery_list li .info {
+    display: table-cell;
+    width: auto;
+    height: 210px;
+    padding: 0 0 0 50px;
+    vertical-align: middle;
+}
+
+.gallery_list li .info .tit {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    color: #222222;
+    margin: 0 0 18px;
+}
+
+.gallery_list li .info .date {
+    font-weight: 700;
+    font-size: 14px;
+    color: #222222;
+    margin: 0 0 46px;
+}
+
+.btn_detail {
+    display: inline-block;
+    padding: 0 15px 0 0;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.btn_detail.red {
+    color: #993b42;
+    border-bottom: 1px solid #993b42;
+    background: url('img/btn_detail_arr_red.png') right center no-repeat;
+}
+
+.gallery_list_wrap > .event_content.on {
+    display: block;
+}
+
+.gallery_list_wrap > .event_content {
+    display: none;
+}
+
+/* EVENT END*/
