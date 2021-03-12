@@ -105,3 +105,35 @@ $(document).ready(function(){
     })
 
 });
+
+// 음료 메뉴 탭
+
+$(document).ready(function(){
+
+    $('ul.drink_title li').click(function(){
+        var drink_id = $(this).attr('data-drink');
+
+        $('ul.drink_title li').removeClass('on');
+        $('.drink_content').removeClass('on');
+
+        $(this).addClass('on');
+        $("#"+drink_id).addClass('on');
+    })
+
+});
+
+// 음료 자세히보기
+
+$(document).ready(function(){
+
+    $('ul.detail_drink li').click(function(){
+        var detail_id = $(this).attr('data-detail');
+
+        $('ul.detail_drink li').removeClass('open');
+        $('.detail_content').removeClass('open');
+
+        $(this).addClass('open');
+        $("#"+detail_id).addClass('open');
+    })
+
+});

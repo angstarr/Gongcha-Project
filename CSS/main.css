@@ -130,6 +130,12 @@ body{
   margin:0;
 }
 
+table {
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
 select {
     display: inline-block;
     width: 100%;
@@ -1924,6 +1930,173 @@ text-align: center;
     opacity: 1;
 }
 
+.drink_info_wrap.open {
+    padding: 40px 680px;
+    max-height: 1000px;
+}
+
+.drink_info_wrap {
+    width: 1200px;
+    padding: 0 680px;
+    margin: -1px -680px 0;
+    max-height: 0;
+    background: #f9f9fb;
+    position: relative;
+    overflow: hidden;
+    transition: all .25s;
+}
+
+.drink_info_wrap .contents {
+    width: 100%;
+    overflow: hidden;
+}
+
+.drink_info_wrap .contents .visual {
+    width: 374px;
+    float: left;
+}
+
+.drink_info_wrap .contents .visual img {
+    width: 374px;
+    height: auto;
+}
+
+.drink_info_wrap .contents .info {
+    width: 765px;
+    float: right;
+    position: relative;
+}
+
+.drink_info_wrap .contents .info .hgroup {
+    padding: 16px 0 0;
+    margin: 0 0 46px;
+}
+
+.drink_info_wrap .contents .info .hgroup .tit {
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #222222;
+    text-align: left;
+}
+
+.drink_info_wrap .contents .info .hgroup .txt {
+    font-weight: normal;
+    margin: 0 0 20px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #222222;
+}
+
+.drink_info_wrap .contents .info .hgroup .price {
+    width: 100%;
+    overflow: hidden;
+}
+
+.drink_info_wrap .price .box:first-child {
+    margin: 0;
+}
+
+.drink_info_wrap .price .box.s2 {
+    padding: 0 0 0 60px;
+}
+
+.drink_info_wrap .price .box {
+    float:left;
+    margin: 0 0 0 70px;
+    position: relative;
+}
+
+.drink_info_wrap .price .box .size {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #222222;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.drink_info_wrap .price .box .val {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    color: #c20f2f;
+}
+
+.drink_info_wrap .price .box .val strong {
+    font-size: 20px;
+}
+
+.drink_info_wrap .table .tit {
+    margin: 0 0 12px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #222222;
+}
+
+.drink_info_wrap .table table {
+    border: solid #444444;
+    border-width: 1px 0;
+    text-align: center;
+}
+
+.drink_info_wrap .table table tbody tr:first-child {
+    height: 23px;
+}
+
+.drink_info_wrap .table table tbody tr th:first-child {
+    height: 51px;
+    width: 100px;
+}
+
+.drink_info_wrap .table table tbody tr th {
+    width: 90px;
+    height: 28px;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    font-size: 12px;
+    color: #666666;
+}
+
+.drink_info_wrap .table table tbody tr th:last-child {
+    border-right: none;
+}
+
+.drink_info_wrap .table table tbody tr td {
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    font-size: 12px;
+    color: #666666;
+    height: 50px;
+    width: 46px;
+}
+
+.drink_info_wrap .table table tbody tr td:last-child {
+    border-right: none;
+}
+
+.drink_info_wrap .btn_close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 62px;
+    right: 50%;
+    margin: 0 -600px 0 0;
+    background: url('img/pro_info_close.png') 0 0 no-repeat;
+}
+
+.drink_list_body > div.on {
+    display: block;
+}
+
+.drink_list_body > div {
+    display: none;
+}
+
+/* drink end */
+
 /* TEA RECIPE start */
 
 .tea_recipe_wrap {
@@ -2265,7 +2438,6 @@ text-align: center;
     float:left;
     text-align: center;
 }
-
 
 .benefit_head .info {
     width: 600px;
