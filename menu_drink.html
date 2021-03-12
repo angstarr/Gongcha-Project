@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>공차</title>
         <link rel="stylesheet" href="css/main.css" type="text/css">
+        <script src="js/main.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -116,225 +118,683 @@
           <div id="contents">
 
             <div class="drink_list">
-              <ul>
-                <li>
+              <ul class="drink_title">
+                <li class="on" data-drink="drink1">
                   <a href="#self">
                     <span>시즌 메뉴</span>
                   </a>
                 </li>
-                <li>
+                <li data-drink="drink2">
                   <a href="#self">
                     <span>베스트 콤비네이션</span>
                   </a>
                 </li>
-                <li>
+                <li data-drink="drink3">
                   <a href="#self">
                     <span>오리지널 티</span>
                   </a>
                 </li>
-                <li>
+                <li data-drink="drink4">
                   <a href="#self">
                     <span>밀크티</span>
                   </a>
                 </li>
-                <li>
+                <li data-drink="drink5">
                   <a href="#self">
                     <span>브라운슈가</span>
                   </a>
                 </li>
-                <li>
+                <li data-drink="drink6">
                   <a href="#self">
                     <span>과일믹스</span>
                   </a>
                 </li>
-                <li>
+                <li data-drink="drink7">
                   <a href="#self">
                     <span>스무디</span>
                   </a>
                 </li>
-                <li>
+                <li data-drink="drink8">
                   <a href="#self">
                     <span>커피</span>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="sub_hgroup">
-              <h3 class="tit">시즌 메뉴</h3>
-            </div>
-            <div class="season_list_wrap">
-              <div class="hgroup">
-                <p class="tit">2021 봄 스페셜 시즌 음료</p>
+
+            <div class="drink_list_body">
+              <div id="drink1" class="drink_content on">
+                <div class="sub_hgroup">
+                  <h3 class="tit">시즌 메뉴</h3>
+                </div>
+                <div class="season_list_wrap">
+                  <div class="hgroup">
+                    <p class="tit">2021 봄 스페셜 시즌 음료</p>
+                  </div>
+                  <div class="drink_list_wrap">
+                    <ul class="detail_drink">
+                      <li data-detail="detail1">
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_1_1.png" alt="딸기 쿠키 밀크티">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">딸기 쿠키 밀크티</span>
+                        </a>
+                      </li>
+                      <li data-detail="detail2">
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_1_2.png" alt="딸기 쿠키 스무디">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">딸기 쿠키 스무디</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="detail1" class="drink_info_wrap detail_content">
+                    <div class="contents">
+                      <div class="visual">
+                        <img src="css/img/tea/season_1_1A.png" alt="">
+                      </div>
+                      <div class="info">
+                        <div class="hgroup">
+                          <p class="tit">딸기 쿠키 밀크티</p>
+                          <p class="txt">얼그레이티를 넣은 딸기 밀크티에 공차만의 부드러운 밀크폼 바삭한 쿠키를 올린 밀크티</p>
+                          <div class="price">
+                            <p class="box s2">
+                              <span class="size">Large</span>
+                              <span class="val">
+                                <strong>4,900원</strong>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="table">
+                          <p class="tit">제품 영양정보</p>
+                          <table border="0" cellpadding="0" cellspacing="0" width="692">
+                            <tbody>
+                              <tr height="23">
+                                <th rowspan="2" height="51" width="100">메뉴명</th>
+                                <th style="height: 28px;" width="90">일회제공량(g)</th>
+                                <th style="height: 28px;" width="90">칼로리(kcal)</th>
+                                <th style="height: 28px;" width="90">당류(g)</th>
+                                <th style="height: 28px;" width="90">단백질(g)</th>
+                                <th style="height: 28px;" width="90">포화지방(g)</th>
+                                <th style="height: 28px;" width="90">나트륨(mg)</th>
+                                <th style="height: 28px;" width="90">카페인(mg)</th>
+                              </tr>
+                              <tr height="28">
+                                <td height="28" style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  딸기 쿠키
+                                  <br>
+                                  밀크티
+                                </td>
+                                <td>473</td>
+                                <td>376</td>
+                                <td>36</td>
+                                <td>7</td>
+                                <td>11</td>
+                                <td>273</td>
+                                <td>17</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <br>
+                          <strong>*알레르기 유발 식품 :</strong>
+                          우유, 대두, 밀
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn_close">
+                      <span class="hide">닫기</span>
+                    </a>
+                  </div>
+                  <div id="detail2" class="drink_info_wrap detail_content">
+                    <div class="contents">
+                      <div class="visual">
+                        <img src="css/img/tea/season_1_2.png" alt="">
+                      </div>
+                      <div class="info">
+                        <div class="hgroup">
+                          <p class="tit">딸기 쿠키 스무디</p>
+                          <p class="txt">얼그레이티로 만든 밀크 스무디에 달콤한 딸기와 바삭한 쿠키를 더한 스무디</p>
+                          <div class="price">
+                            <p class="box s2">
+                              <span class="size">Large</span>
+                              <span class="val">
+                                <strong>5,300원</strong>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="table">
+                          <p class="tit">제품 영양정보</p>
+                          <table border="0" cellpadding="0" cellspacing="0" width="692">
+                            <tbody>
+                              <tr height="23">
+                                <th rowspan="2" height="51" width="100">메뉴명</th>
+                                <th style="height: 28px;" width="90">일회제공량(g)</th>
+                                <th style="height: 28px;" width="90">칼로리(kcal)</th>
+                                <th style="height: 28px;" width="90">당류(g)</th>
+                                <th style="height: 28px;" width="90">단백질(g)</th>
+                                <th style="height: 28px;" width="90">포화지방(g)</th>
+                                <th style="height: 28px;" width="90">나트륨(mg)</th>
+                                <th style="height: 28px;" width="90">카페인(mg)</th>
+                              </tr>
+                              <tr height="28">
+                                <td height="28" style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  딸기 쿠키
+                                  <br>
+                                  밀크티
+                                </td>
+                                <td>473</td>
+                                <td>446</td>
+                                <td>55</td>
+                                <td>3</td>
+                                <td>11</td>
+                                <td>111</td>
+                                <td>21</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <br>
+                          <strong>*알레르기 유발 식품 :</strong>
+                          우유, 대두, 밀
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn_close">
+                      <span class="hide">닫기</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="season_list_wrap">
+                  <div class="hgroup">
+                    <p class="tit">2021 봄 시즌 메뉴</p>
+                  </div>
+                  <div class="drink_list_wrap">
+                    <ul class="datail_drink">
+                      <li data-detail="detail3">
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_2_1.png" alt="딸기 쏙쏙 쥬얼리 밀크티">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            딸기 쏙쏙 쥬얼리
+                            <br>
+                            밀크티
+                           </span>
+                        </a>
+                      </li>
+                      <li data-detail="detail4">
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_2_2.png" alt="딸기 치즈 쥬얼리 쿠키 밀크티">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            딸기 치즈쥬얼리
+                            <br>
+                            쿠키 밀크티
+                          </span>
+                        </a>
+                      </li>
+                      <li data-detail="detail5">
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_2_3.png" alt="딸기 치즈 쿠키 크러쉬">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">딸기 치즈 쿠키 크러쉬</span>
+                        </a>
+                      </li>
+                      <li data-detail="detail6">
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_2_4.png" alt="체리바른 딸기 크러쉬">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">체리바른 딸기 크러쉬</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="detail3" class="drink_info_wrap detail_content">
+                    <div class="contents">
+                      <div class="visual">
+                        <img src="css/img/tea/season_2_1.png" alt="">
+                      </div>
+                      <div class="info">
+                        <div class="hgroup">
+                          <p class="tit">
+                            딸기 쏙쏙 쥬얼리
+                            <br>
+                            밀크티
+                          </p>
+                          <p class="txt">얼그레이티를 넣은 딸기 밀크티에 상큼한 딸기 과육과 쫀득쫀득 딸기 쥬얼리를 더한 밀크티
+                          </p>
+                          <div class="price">
+                            <p class="box s2">
+                              <span class="size">Large</span>
+                              <span class="val">
+                                <strong>5,100원</strong>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="table">
+                          <p class="tit">제품 영양정보</p>
+                          <table border="0" cellpadding="0" cellspacing="0" width="692">
+                            <tbody>
+                              <tr height="23">
+                                <th rowspan="2" height="51" width="100">메뉴명</th>
+                                <th style="height: 28px;" width="90">일회제공량(g)</th>
+                                <th style="height: 28px;" width="90">칼로리(kcal)</th>
+                                <th style="height: 28px;" width="90">당류(g)</th>
+                                <th style="height: 28px;" width="90">단백질(g)</th>
+                                <th style="height: 28px;" width="90">포화지방(g)</th>
+                                <th style="height: 28px;" width="90">나트륨(mg)</th>
+                                <th style="height: 28px;" width="90">카페인(mg)</th>
+                              </tr>
+                              <tr height="28">
+                                <td height="28" style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  딸기 쿠키
+                                  <br>
+                                  밀크티
+                                </td>
+                                <td>473</td>
+                                <td>223</td>
+                                <td>24</td>
+                                <td>7</td>
+                                <td>2.8</td>
+                                <td>65</td>
+                                <td>20</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <br>
+                          <strong>*알레르기 유발 식품 :</strong>
+                          우유
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn_close">
+                      <span class="hide">닫기</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="season_list_wrap">
+                  <div class="hgroup">
+                    <p class="tit">2020 겨울 시즌 메뉴</p>
+                  </div>
+                  <div class="drink_list_wrap">
+                    <ul>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_3_1.png" alt="토피넛 밀크티+펄">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            토피넛 밀크티+펄
+                           </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_3_2.png" alt="초코바른 토피넛 스무디">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            초코바른 토피넛 스무디
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_3_3.png" alt="다크초코 밀크티+펄">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            다크초코 밀크티+펄
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="season_list_wrap">
+                  <div class="hgroup">
+                    <p class="tit">2020 가을 시즌 메뉴</p>
+                  </div>
+                  <div class="drink_list_wrap">
+                    <ul>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_4_1.png" alt="타로바른 밀크티+펄">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            딸기 쏙쏙 쥬얼리
+                            <br>
+                            밀크티
+                           </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_4_2.png" alt="타로바른 쿠키 스무디">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            딸기 치즈쥬얼리
+                            <br>
+                            쿠키 밀크티
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_4_3.png" alt="흑임자 밀크티+펄">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">딸기 치즈 쿠키 크러쉬</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_4_4.png" alt="흑임자 스무디">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">체리바른 딸기 크러쉬</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="drink_list_wrap">
-                <ul>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_1_1.png" alt="딸기 쿠키 밀크티">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">딸기 쿠키 밀크티</span>
+              <div id="drink2" class="drink_content">
+                <div class="sub_hgroup">
+                    <h3 class="tit">베스트 콤비네이션</h3>
+                  </div>
+                <div class="season_list_wrap">
+                  <div class="hgroup">
+                    <p class="tit">2021 봄 스페셜 시즌 음료</p>
+                  </div>
+                  <div class="drink_list_wrap">
+                    <ul>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_1_1.png" alt="딸기 쿠키 밀크티">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">딸기 쿠키 밀크티</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_1_2.png" alt="딸기 쿠키 스무디">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">딸기 쿠키 스무디</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="drink_info_wrap open">
+                    <div class="contents">
+                      <div class="visual">
+                        <img src="css/img/tea/season_1_1A.png" alt="">
+                      </div>
+                      <div class="info">
+                        <div class="hgroup">
+                          <p class="tit">딸기 쿠키 밀크티</p>
+                          <p class="txt">얼그레이티를 넣은 딸기 밀크티에 공차만의 부드러운 밀크폼 바삭한 쿠키를 올린 밀크티</p>
+                          <div class="price">
+                            <p class="box s2">
+                              <span class="size">Large</span>
+                              <span class="val">
+                                <strong>4,900원</strong>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="drinkle">
+                          <p class="tit">제품 영양정보</p>
+                          <table border="0" cellpadding="0" cellspacing="0" width="692">
+                            <tbody>
+                              <tr height="23">
+                                <th rowspan="2" height="51" width="100">메뉴명</th>
+                                <th style="height: 28px;" width="90">일회제공량(g)</th>
+                                <th style="height: 28px;" width="90">칼로리(kcal)</th>
+                                <th style="height: 28px;" width="90">당류(g)</th>
+                                <th style="height: 28px;" width="90">단백질(g)</th>
+                                <th style="height: 28px;" width="90">포화지방(g)</th>
+                                <th style="height: 28px;" width="90">나트륨(mg)</th>
+                                <th style="height: 28px;" width="90">카페인(mg)</th>
+                              </tr>
+                              <tr height="28">
+                                <td height="28" style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                                <td style="height: 28px;" width="46">L</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  딸기 쿠키
+                                  <br>
+                                  밀크티
+                                </td>
+                                <td>473</td>
+                                <td>376</td>
+                                <td>36</td>
+                                <td>7</td>
+                                <td>11</td>
+                                <td>273</td>
+                                <td>17</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <br>
+                          <strong>*알레르기 유발 식품 :</strong>
+                          우유, 대두, 밀
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn_close">
+                      <span class="hide">닫기</span>
                     </a>
-                  </li>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_1_2.png" alt="딸기 쿠키 스무디">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">딸기 쿠키 스무디</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="season_list_wrap">
-              <div class="hgroup">
-                <p class="tit">2021 봄 시즌 메뉴</p>
-              </div>
-              <div class="drink_list_wrap">
-                <ul>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_2_1.png" alt="딸기 쏙쏙 쥬얼리 밀크티">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">
-                        딸기 쏙쏙 쥬얼리
-                        <br>
-                        밀크티
-                       </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_2_2.png" alt="딸기 치즈 쥬얼리 쿠키 밀크티">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">
-                        딸기 치즈쥬얼리
-                        <br>
-                        쿠키 밀크티
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_2_3.png" alt="딸기 치즈 쿠키 크러쉬">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">딸기 치즈 쿠키 크러쉬</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_2_4.png" alt="체리바른 딸기 크러쉬">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">체리바른 딸기 크러쉬</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="season_list_wrap">
-              <div class="hgroup">
-                <p class="tit">2020 겨울 시즌 메뉴</p>
-              </div>
-              <div class="drink_list_wrap">
-                <ul>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_3_1.png" alt="토피넛 밀크티+펄">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">
-                        토피넛 밀크티+펄
-                       </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_3_2.png" alt="초코바른 토피넛 스무디">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">
-                        초코바른 토피넛 스무디
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_3_3.png" alt="다크초코 밀크티+펄">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">
-                        다크초코 밀크티+펄
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="season_list_wrap">
-              <div class="hgroup">
-                <p class="tit">2020 가을 시즌 메뉴</p>
-              </div>
-              <div class="drink_list_wrap">
-                <ul>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_4_1.png" alt="타로바른 밀크티+펄">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">
-                        딸기 쏙쏙 쥬얼리
-                        <br>
-                        밀크티
-                       </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_4_2.png" alt="타로바른 쿠키 스무디">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">
-                        딸기 치즈쥬얼리
-                        <br>
-                        쿠키 밀크티
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_4_3.png" alt="흑임자 밀크티+펄">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">딸기 치즈 쿠키 크러쉬</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#self">
-                      <span class="img">
-                        <img src="css/img/tea/season_4_4.png" alt="흑임자 스무디">
-                        <span class="img_plus">자세히보기</span>
-                      </span>
-                      <span class="txt">체리바른 딸기 크러쉬</span>
-                    </a>
-                  </li>
-                </ul>
+                  </div>
+                </div>
+                <div class="season_list_wrap">
+                  <div class="hgroup">
+                    <p class="tit">2021 봄 시즌 메뉴</p>
+                  </div>
+                  <div class="drink_list_wrap">
+                    <ul>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_2_1.png" alt="딸기 쏙쏙 쥬얼리 밀크티">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            딸기 쏙쏙 쥬얼리
+                            <br>
+                            밀크티
+                           </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_2_2.png" alt="딸기 치즈 쥬얼리 쿠키 밀크티">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            딸기 치즈쥬얼리
+                            <br>
+                            쿠키 밀크티
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_2_3.png" alt="딸기 치즈 쿠키 크러쉬">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">딸기 치즈 쿠키 크러쉬</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_2_4.png" alt="체리바른 딸기 크러쉬">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">체리바른 딸기 크러쉬</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="season_list_wrap">
+                  <div class="hgroup">
+                    <p class="tit">2020 겨울 시즌 메뉴</p>
+                  </div>
+                  <div class="drink_list_wrap">
+                    <ul>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_3_1.png" alt="토피넛 밀크티+펄">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            토피넛 밀크티+펄
+                           </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_3_2.png" alt="초코바른 토피넛 스무디">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            초코바른 토피넛 스무디
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_3_3.png" alt="다크초코 밀크티+펄">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            다크초코 밀크티+펄
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="season_list_wrap">
+                  <div class="hgroup">
+                    <p class="tit">2020 가을 시즌 메뉴</p>
+                  </div>
+                  <div class="drink_list_wrap">
+                    <ul>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_4_1.png" alt="타로바른 밀크티+펄">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            딸기 쏙쏙 쥬얼리
+                            <br>
+                            밀크티
+                           </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_4_2.png" alt="타로바른 쿠키 스무디">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">
+                            딸기 치즈쥬얼리
+                            <br>
+                            쿠키 밀크티
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_4_3.png" alt="흑임자 밀크티+펄">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">딸기 치즈 쿠키 크러쉬</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#self">
+                          <span class="img">
+                            <img src="css/img/tea/season_4_4.png" alt="흑임자 스무디">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">체리바른 딸기 크러쉬</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
