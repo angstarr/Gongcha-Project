@@ -519,8 +519,12 @@ ol, ul, li{
 }
 
 .bx-wrapper {
-    max-width: 100%;
-    position: relative;
+  max-width: 100%;
+  position: relative;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0 !important;
 }
 
 .bx-viewport {
@@ -530,17 +534,17 @@ ol, ul, li{
     position: relative;
 }
 
-.bx-slider {
+/* .bxslider {
     width: 615%;
     position: relative;
 }
 
-.bx-slider li {
+.bxslider li {
     float: left;
     list-style: none;
     position: relative;
     width: 2560px;
-}
+} */
 
 .main_visual .box-slider li {
     text-align: center;
@@ -550,7 +554,7 @@ ol, ul, li{
     height: 850px;
 }
 
-.bx-control .bx-prev {
+#main_visual .bx-control .bx-prev {
   position: absolute;
   top: 398px;
   left: 680px;
@@ -559,7 +563,7 @@ ol, ul, li{
   background: url('img/prev.png') 0 0 no-repeat;
 }
 
-.bx-control .bx-next {
+#main_visual .bx-control .bx-next {
   position: absolute;
   top: 398px;
   right: 680px;
@@ -568,13 +572,13 @@ ol, ul, li{
   background: url('img/next.png') 0 0 no-repeat;
 }
 
-.bx-control a {
+#main_visual .bx-control a {
   display: block;
   outline: 0;
   text-indent: -9999px;
 }
 
-.bx-slider li .btn_brandstory {
+.bxslider li .btn_brandstory {
     display: block;
     width: 230px;
     height: 50px;
@@ -587,15 +591,15 @@ ol, ul, li{
     text-align: center;
 }
 
-.bx-slider li a:hover {
+.bxslider li a:hover {
     background: #cf3e58;
 }
 
-.bx-slider li a:hover span {
+.bxslider li a:hover span {
     color: white;
 }
 
-.bx-slider li .btn_brandstory span {
+.bxslider li .btn_brandstory span {
     display: inline-block;
     padding: 0 20px 0 0;
     font-weight: 700;
@@ -2955,6 +2959,14 @@ text-align: center;
     display: table-cell;
     width: 700px;
     height: 210px;
+}
+
+.gallery_list_wrap > ul.on {
+    display: block;
+}
+
+.gallery_list_wrap > ul {
+    display: none;
 }
 
 /* EVENT END*/
