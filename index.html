@@ -7,6 +7,11 @@
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <script src="js/main.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
   </head>
   <body>
     <div id="wrap">
@@ -106,7 +111,7 @@
           <div id="main_visual" class="main_visual n-motion n-top n-active">
             <div class="bx-wrapper">
               <div class="bx-viewport">
-                <ul class="bx-slider">
+                <ul class="bxslider">
                   <li>
                     <img src="css/img/main_slide/1.jpg" alt="">
                     <a href="menu_drink.html" class="btn_brandstory" target="_self">
@@ -138,7 +143,7 @@
                 <a href="#self" class="bx-next">Next</a>
               </div>
             </div>
-            <ol class="visual_menu">
+            <ol class="visual_menu bx-pager">
               <li><a href="#self" data-slide-index="0">쿠팡이츠 2천원 할인</a></li>
               <li><a href="#self" data-slide-index="1">딸기&amp;쿠키 신메뉴</a></li>
               <li><a href="#self" data-slide-index="2">딸기&amp;치즈 신메뉴</a></li>
@@ -186,7 +191,7 @@
               <a href="#self" class="see_more">자세히 보기 ></a>
             </div>
             <div class="section4">
-              <ul>
+              <ul class="secslider">
                 <li>
                   <a href="#self">
                     <img src="css/img/comingsoon_1.jpg" id="season" alt="시즌 이미지">
@@ -204,8 +209,8 @@
                 </li>
               </ul>
               <div class="bx_control">
-                <a class="bx_prev"  onclick="bx_image_control(0)">&lt;</a>
-                <a class="bx_next"  onclick="bx_image_control(1)">&gt;</a>
+                <a class="bx_prev">&lt;</a>
+                <a class="bx_next">&gt;</a>
               </div>
             </div>
             <div class="section5">
