@@ -534,18 +534,6 @@ ol, ul, li{
     position: relative;
 }
 
-/* .bxslider {
-    width: 615%;
-    position: relative;
-}
-
-.bxslider li {
-    float: left;
-    list-style: none;
-    position: relative;
-    width: 2560px;
-} */
-
 .main_visual .box-slider li {
     text-align: center;
 }
@@ -911,15 +899,29 @@ ol, ul, li{
   float:left;
   margin: 0 0 0 40px;
 }
-.tab li a{
-  color: #993b42;
-  border-bottom:3px solid #993b42;
-  display:block;
-  padding: 0 0 6px;
-  font-weight: 700;
-  font-size:15px;
 
+.tab li a{
+    color: #9b8777;
+    display:block;
+    padding: 0 0 6px;
+    font-weight: 700;
+    font-size:15px;
 }
+
+.tab li.on a {
+    color: #993b42;
+    border-bottom: 3px solid #993b42;
+}
+
+.recipe > li.on {
+    display: block;
+}
+
+.recipe > li {
+    display: none;
+}
+
+
  #footer{
   width:100%;
   position:relative;
