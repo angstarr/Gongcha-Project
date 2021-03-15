@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>공차</title>
         <link rel="stylesheet" href="css/main.css" type="text/css">
+        <script src="js/main.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -101,111 +103,130 @@
         <div id="container_brand">
           <div id="pagetop">
               <div class="page_title menu">
-                <h2 class="tit">TEA RECIPE</h2>
-                <p class="txt">공차만의 특별한 티 레시피를 공개합니다.</p>
+                <h2 class="tit">디저트</h2>
+                <p class="txt">공차와 곁들이면 좋은 계절메뉴와 달콤한 디저트</p>
                 <div class="location">
                 <a href="index.html" class="home">
                   <span class="hide">Home</span>
                 </a>
-                <a href="menu_howtoorder.html" class="depth">메뉴</a>
-                <span class="this">티 레시피</span>
+                <a href="menu_dessert.html" class="depth">메뉴</a>
+                <span class="this">디저트</span>
                 </div>
               </div>
             </div>
 
           <div id="contents">
 
-            <div class="tea_recipe_wrap">
-              <ul class="tea_recipe">
-                <li>
-                  <div class="info">
-                    <p class="tit n-motion n-left n-active">
-                      오리지널 티
-                      <br>
-                      <span class="red">ORIGINAL TEA</span>
-                    </p>
-                    <p class="txt n-motion n-left n-active">
-                      티백이나 가루가 아닌 황실에 바치던 잎차만 골라
-                      <br>
-                      1도 1초도 어기지 않고 차마다 다른 황금률로 우려
-                      <br>
-                      한 잔 한 잔 부드러움을 더해 만듭니다.
-                    </p>
-                    <a href="#" class="btn n-motion n-bottom n-active">
-                      <span>메뉴 보러가기</span>
-                    </a>
-                  </div>
-                  <div class="visual n-motion n-right n-active">
-                    <img src="css/img/tea/tea_recipe_img1.png" alt="오리지널 티">
-                  </div>
+            <div class="dessert_list">
+              <ul class="tab_title">
+                <li class="on">
+                  <a href="#">
+                    <span>베이커리</span>
+                  </a>
                 </li>
                 <li>
-                  <div class="info">
-                    <p class="tit n-motion n-left n-active">
-                      밀크폼 &amp; 치즈폼
-                      <br>
-                      <span class="red">MILK FOAM &amp; CHEESE FOAM</span>
-                    </p>
-                    <p class="txt n-motion n-left n-active">
-                      프리미엄 잎차만 골라
-                      <br>
-                      차마다 다른 황금률로 우려
-                      <br>
-                      달콤짭조름한 밀크폼 또는 치즈폼을 더해 만듭니다.
-                    </p>
-                    <a href="#" class="btn n-motion n-bottom n-active">
-                      <span>메뉴 보러가기</span>
-                    </a>
-                  </div>
-                  <div class="visual n-motion n-right n-active">
-                    <img src="css/img/tea/tea_recipe_img2.png" alt="밀크폼 &amp; 치즈폼">
-                  </div>
-                </li>
-                <li>
-                  <div class="info">
-                    <p class="tit n-motion n-left n-active">
-                      밀크티
-                      <br>
-                      <span class="red">MILK TEA</span>
-                    </p>
-                    <p class="txt n-motion n-left n-active">
-                      최적의 자연이 키워낸 잎차만 골라
-                      <br>
-                      각 차종에 맞는 황금률로 우려 담백한 우유와
-                      <br>
-                      허니, 카라멜 등 새로운 맛을 더해 만듭니다.
-                    </p>
-                    <a href="#" class="btn n-motion n-bottom n-active">
-                      <span>메뉴 보러가기</span>
-                    </a>
-                  </div>
-                  <div class="visual n-motion n-right n-active">
-                    <img src="css/img/tea/tea_recipe_img3.png" alt="밀크티">
-                  </div>
-                </li>
-                <li>
-                  <div class="info">
-                    <p class="tit n-motion n-left n-active">
-                      과일 그린티
-                      <br>
-                      <span class="red">Fruit Green Tea</span>
-                    </p>
-                    <p class="txt n-motion n-left n-active">
-                      찻잎의 푸름을 간직한 녹차만 골라
-                      <br>
-                      최적의 온도 89℃로 우려
-                      <br>
-                      달콤상큼한 과일을 더해 만듭니다.
-                    </p>
-                    <a href="#" class="btn n-motion n-bottom n-active">
-                      <span>메뉴 보러가기</span>
-                    </a>
-                  </div>
-                  <div class="visual n-motion n-right n-active">
-                    <img src="css/img/tea/tea_recipe_img5.png" alt="과일 그린티">
-                  </div>
+                  <a href="#">
+                    <span>스낵&amp;미니 디저트</span>
+                  </a>
                 </li>
               </ul>
+            </div>
+
+            <div class="dessert_list_body">
+              <div class="tab_content on">
+                <div class="sub_hgroup">
+                  <h3 class="tit">베이커리</h3>
+                </div>
+                <div class="season_list_wrap">
+                  <div class="drink_list_wrap">
+                    <ul class="detail_drink">
+                      <li>
+                        <a href="#">
+                          <span class="img">
+                            <img src="css/img/dessert/1-1.png" alt="오리지날 핫도그">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">오리지날 핫도그</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="img">
+                            <img src="css/img/dessert/1-2.png" alt="핫치킨 브리또">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">핫치킨 브리또</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="img">
+                            <img src="css/img/dessert/1-3.png" alt="치킨 치즈 브리또">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">치킨 치즈 브리또</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="img">
+                            <img src="css/img/dessert/1-4.png" alt="말렌카 케이크(월넛)또">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">말렌카 케이크(월넛)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="img">
+                            <img src="css/img/dessert/1-5.png" alt="말렌카 케이크(코코아)">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">말렌카 케이크(코코아)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="img">
+                            <img src="css/img/dessert/1-6.jpg" alt="잉글리쉬 머핀 샌드위치">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">잉글리쉬 머핀 샌드위치</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="tab_content">
+                <div class="sub_hgroup">
+                    <h3 class="tit">스낵&amp;미니 디저트</h3>
+                  </div>
+                <div class="season_list_wrap">
+                  <div class="drink_list_wrap">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span class="img">
+                            <img src="css/img/dessert/1-1.png" alt="오리지날 핫도그">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">오리지날 핫도그</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="img">
+                            <img src="css/img/dessert/1-2.png" alt="핫치킨 브리또">
+                            <span class="img_plus">자세히보기</span>
+                          </span>
+                          <span class="txt">핫치킨 브리또</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
