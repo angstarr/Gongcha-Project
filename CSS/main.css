@@ -3089,4 +3089,46 @@ text-align: center;
     display: none;
 }
 
-/* EVENT END*/
+/* EVENT END */
+
+/* NEWS START */
+
+.txt_list_wrap .txt_list {
+    width: 1260px;
+    margin: 0 0 -60px;
+    overflow: hidden;
+}
+
+.txt_list_wrap .txt_list li {
+    width: 360px;
+    height: 210px;
+    margin: 0 60px 60px 0;
+    float: left;
+    position: relative;
+    border-bottom: 1px solid #444444;
+}
+
+.txt_list_wrap .txt_list li .date {
+    font-weight: 700;
+    font-size: 14px;
+    color: #222222;
+    margin: 0 0 16px;
+}
+
+.txt_list_wrap .txt_list li .tit {
+    height: 76px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    color: #222222;
+    position: relative;
+    overflow: hidden;
+}
+
+.txt_list_wrap .txt_list li .btn_detail {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}
+
+/* NEWS END */
