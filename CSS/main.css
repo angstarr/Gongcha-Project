@@ -2162,6 +2162,64 @@ text-align: center;
 
 /* DESSERT END */
 
+/*  MD STORE START */
+
+.mdStore_list_body .sub_hgroup {
+    width: 100%;
+    height: 39px;
+    padding: 0 0 15px;
+    margin: 0 0 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #444444;
+}
+
+.mdStore_list {
+    margin: 0 0 70px;
+}
+
+.mdStore_list ul {
+    padding: 16px 0;
+    overflow: hidden;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.mdStore_list ul li {
+    width: 200px;
+    float: left;
+}
+
+.mdStore_list ul li a {
+    display: block;
+    height: 22px;
+    padding: 12px 0 12px 19px;
+    background-image: url('img/bullet2.png');
+    background-position: 0 center;
+    background-repeat: no-repeat;
+}
+
+.mdStore_list ul li a span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+}
+
+.mdStore_list ul li a:hover span {
+    color: #993b42;
+    border-bottom: 2px solid #993b42;
+}
+
+.mdStore_list_body > div.on {
+    display: block;
+}
+
+.mdStore_list_body > div {
+    display: none;
+}
+
+/*  MD STORE END */
 
 /* TEA RECIPE start */
 
