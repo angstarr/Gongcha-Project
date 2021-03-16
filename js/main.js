@@ -13,29 +13,41 @@ $(document).ready(function(){
 
   });
 
-  $('ul.eng li').on('mouseenter', function(){
+  $('ul.eng > li').on('mouseover', function()
+  {
 
 
       var $this = $(this);
+      var menuIndex = $this.index();
 
       $('ul.eng li').removeClass("on");
       $this.addClass("on");
 
+      $('ul.sub li').on('mouseover', function()
+      {
+
+        $('ul.eng > li').closest('ul.eng > li').removeClass("on");
+        $('ul.eng > li').eq(menuIndex).addClass("on");
+
+      });
+
   });
 
 
-  $('.eng li, .sub li').on('mouseenter', function()
+  $('.eng li, .sub').on('mouseover', function()
   {
 
     $('.sub').addClass("on");
 
+    $('.eng li, .sub').on('mouseleave', function()
+    {
+
+      $('.sub').removeClass("on");
+
+    });
+
   });
 
-  $('.eng li, .sub li').on('mouseleave', function()
-  {
-
-    $('.sub').removeClass("on");
-  });
 
   var mainSlider = $('.bxslider').bxSlider({
     auto: true,
