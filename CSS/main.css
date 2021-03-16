@@ -1834,14 +1834,17 @@ text-align: center;
 
 .sub_hgroup {
     width: 100%;
+    padding: 0 0 15px;
     margin: 0 0 20px;
     overflow: hidden;
+    border-bottom: 1px solid #444444;
 }
 
 .sub_hgroup .tit {
     font-weight: 700;
     font-size: 26px;
     float: left;
+    margin: 0;
     vertical-align: bottom;
 }
 
@@ -1868,6 +1871,7 @@ text-align: center;
 .list_wrap ul {
     width: 1260px;
     overflow: hidden;
+    padding: 0;
 }
 
 .list_wrap ul li {
