@@ -3216,6 +3216,12 @@ text-align: center;
     background: url('img/page_last.gif') 0 0 no-repeat;
 }
 
+.txt_list_wrap > div.on {
+    display: block;
+}
 
+.txt_list_wrap > div {
+    display: none;
+}
 
 /* NEWS END */
