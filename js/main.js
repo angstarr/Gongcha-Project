@@ -13,6 +13,30 @@ $(document).ready(function(){
 
   });
 
+  $('ul.eng li').on('mouseenter', function(){
+
+
+      var $this = $(this);
+
+      $('ul.eng li').removeClass("on");
+      $this.addClass("on");
+
+  });
+
+
+  $('.eng li, .sub li').on('mouseenter', function()
+  {
+
+    $('.sub').addClass("on");
+
+  });
+
+  $('.eng li, .sub li').on('mouseleave', function()
+  {
+
+    $('.sub').removeClass("on");
+  });
+
   var mainSlider = $('.bxslider').bxSlider({
     auto: true,
     speed: 1000,
