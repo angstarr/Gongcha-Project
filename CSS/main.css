@@ -1,6 +1,6 @@
 @charset "utf-8"
 @media screen and (max-width:1200px){
-/* placeholder for responsive web */
+
 }
 @media screen and (max-width:768px){
   #quickmenu{
@@ -101,11 +101,9 @@
     text-align:center;
   }
 }
-/* * {
-  margin:0;
-  padding:0;
-} */
+
 ::selection {background:#983b43; color:#ffffff;}
+
 a:link{
   text-decoration: none;
   color:white;
@@ -338,7 +336,7 @@ dl, dt, dd {
 .logo{
   float:left;
   display:inline-block;
-  /* z-index:4; */
+
 }
 #gong{
   float:left;
@@ -364,7 +362,7 @@ ol, ul, li{
   float:left;
   position:relative;
   font-weight: 600;
-  /* margin:0 30px; */
+
 }
 .eng > a{
   display:block;
@@ -492,10 +490,8 @@ ol, ul, li{
   z-index: 3;
 }
 #container{
-  /* width: 100%; */
   padding-top:110px;
-  /* align-items: center;
-  margin: 0 auto; */
+
 }
 #main{
   width:1200px;
@@ -630,11 +626,6 @@ ol, ul, li{
   text-align: center;
 }
 
-/* .visual_menu a:active{  자바스크립트 배워서 액티브 유지시키기
-  background-color: #983b43;
-  color:white;
-} */
-
 .visual_menu a:hover {
   background-color: #983b43;
   color:white;
@@ -677,7 +668,6 @@ ol, ul, li{
   float:left;
   width:800px;
   height:500px;
-  /* background-image: url('comingsoon_1.jpg'); */
   position:relative;
 }
 
@@ -692,7 +682,7 @@ ol, ul, li{
   color:black;
   font-size:30px;
   text-align: center;
-  /* margin:0; */
+
 }
 .bx_prev{
   width: 50px;
@@ -714,7 +704,7 @@ ol, ul, li{
   height: 390px;
   padding: 60px 40px 0;
   background-color: rgb(237, 230, 214);
-  /* box-sizing: border-box; */
+
 }
 .section5 ul{
   margin: 0 0 50px;
@@ -1046,11 +1036,13 @@ ol, ul, li{
   left: -15px;
   background-color:#666666;
 }
-/*ㅡㅡㅡㅡㅡㅡBrand storyㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/* Brand story */
+
 #pagetop{
   width:1200px;
   margin:0 auto;
 }
+
 #container_brand{
   width:1200px;
   margin:0 auto;
@@ -1260,7 +1252,8 @@ ol, ul, li{
   padding:55px 0 0;
   float:right;
 }
-/* -------브랜드 약속 --------*/
+/* 브랜드 약속 */
+
 .promise_info{
   color:#666666;
   margin: 0 0 30px;
