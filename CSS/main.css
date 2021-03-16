@@ -1875,6 +1875,7 @@ text-align: center;
 .list_wrap ul {
     width: 1260px;
     overflow: hidden;
+    padding: 0;
 }
 
 .list_wrap ul li {
