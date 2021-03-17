@@ -31,18 +31,23 @@ $(document).ready(function(){
 
       });
 
+      $('ul.eng li').on('mouseleave', function(){
+
+        $('ul.eng > li').removeClass("on");
+      })
+
   });
 
 
   $('.eng li, .sub').on('mouseover', function()
   {
 
-    $('.sub').addClass("on");
+    $('#header').addClass("open");
 
     $('.eng li, .sub').on('mouseleave', function()
     {
 
-      $('.sub').removeClass("on");
+      $('#header').removeClass("open");
 
     });
 
