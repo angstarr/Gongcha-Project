@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <script src="js/main.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f62906316a761315b17a990fbf87f026"></script>
 
   <body>
     <div id="wrap">
@@ -189,7 +190,7 @@
                         <span class="storeAddress">경기도 화성시 동탄솔빛로 47</span>
                       </a>
                     </li>
-                    <li>
+                    <li onclick="dongTan5();">
                       <a href="javascript:void(0)">
                         <span class="store">동탄카림에비뉴점</span>
                         <span class="storeAddress">동탄대로시범길 134, 1층 1049호(청계동, 시범반도유보라 아이비파크4.0)</span>
@@ -203,12 +204,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="store_map">
-                  <div id="daumRoughmapContainer1616225242819" class="root_daum_roughmap root_daum_roughmap_landing gongMap on"></div>
-                  <div id="daumRoughmapContainer1616220362609" class="root_daum_roughmap root_daum_roughmap_landing gongMap"></div>
-                  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-                </div>
+                <div id="map" class="store_map"> </div>
               </div>
 
             </div>
