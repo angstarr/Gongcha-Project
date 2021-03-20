@@ -3,6 +3,14 @@ $(document).ready(function(){
   var tmpMenu;
   var curMenu;
 
+  new daum.roughmap.Lander({
+    "timestamp" : "1616225242819",
+    "key" : "24xds",
+    "mapWidth" : "900",
+    "mapHeight" : "620"
+  }).render();
+
+
   $('ul.tab_title li').on('click', function()
   {
 
@@ -15,6 +23,15 @@ $(document).ready(function(){
       $('.tab_content').eq(seq).addClass("on");
 
   });
+
+  $('ul.store_list_gong > li').on('click', function(){
+
+      var $this = $(this);
+
+      $('ul.store_list_gong > li').removeClass("on");
+      $this.addClass("on");
+
+  })
 
 
   $('ul.eng > li').on('mouseover', function()
@@ -30,7 +47,6 @@ $(document).ready(function(){
         tmpMenu.removeClass("on");
 
       })
-
 
   });
 
@@ -48,6 +64,8 @@ $(document).ready(function(){
     });
 
   });
+
+
 
 
   var mainSlider = $('.bxslider').bxSlider({
@@ -96,12 +114,4 @@ $(document).ready(function(){
    return false;
   });
 
-
 });
-
-
-
-
-
-
-1

@@ -1610,7 +1610,7 @@ text-align: center;
   margin:22px 0 0;
 }
 
-/* store */
+/* find_store */
 
 .page_title.store{
   background-image: url('img/page_top_visual_store.jpg');
@@ -1652,6 +1652,74 @@ text-align: center;
     margin: 0 20px 0 0;
     float:left;
     font-weight: 700;
+}
+
+.store_list_wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.store_list_wrap .store_list {
+    width: 300px;
+    height: 620px;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.store_list ul li {
+    border-top: 1px solid #e4e4e4;
+}
+
+.store_list ul li:first-child {
+    border-top: none;
+}
+
+.store_list ul li a {
+    display: block;
+    height: 123px;
+    padding: 28px 20px;
+    box-sizing: border-box;
+}
+
+.store_list ul li.on a {
+    background: #e3e3e3;
+}
+
+.store_list ul li a .store {
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    color: #222222;
+    margin: 0 0 5px;
+}
+
+.store_map .gomgMap.on {
+    display: block;
+}
+
+.store_map .gomgMap {
+    display: none;
+}
+
+.store_list ul li a .store.new {
+    padding: 0 0 0 37px;
+    background: url('img/icon_new.jpg') left center no-repeat;
+}
+
+.store_list ul li a .storeAddress {
+    display: block;
+    height: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+    overflow: hidden;
+}
+
+.store_list_wrap .store_map {
+    width: 900px;
+    height: 620px;
+    float: left;
 }
 
 /* Menu */
