@@ -4,8 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공차</title>
-        <link rel="stylesheet" href="CSS/main.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
         <script src="js/main.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -13,60 +17,75 @@
         <div class="header_menu">
           <h1 class="logo">
             <a href="index.html">
-              <img src="CSS/img/logo.png" alt>
+              <img src="css/img/logo.png" alt="공차로고">
             </a>
           </h1>
-          <div id="gong">
-            <ul>
-              <li class="eng">
-                <a href="story.html" class="menu">
-                  <span class="english">Brand</span>
-                </a>
-                <ul class="sub">
-                  <li><a href="story.html">브랜드 소개</a></li>
-                  <li><a href="brand_promise.html">공차의 약속</a></li>
-                  <li><a href="brand_identity.html">브랜드 아이덴티</a></li>
-                  <li><a href="brand_global.html">세계속의 공차</a></li>
-                </ul>
-              </li>
-              <li class="eng"><a href="#" class="menu">Menu</a>
-                <ul class="sub">
-                  <li><a href="#">주문 방법</a></li>
-                  <li><a href="#">음료</a></li>
-                  <li><a href="#">디저트</a></li>
-                  <li><a href="#">MD 상품</a></li>
-                  <li><a href="#">티 스토리</a></li>
-                  <li><a href="#">티 레시피</a></li>
-                </ul>
-              </li>
-              <li class="eng"><a href="#" class="menu">Store</a>
-                <ul class="sub">
-                  <li><a href="#">매장 찾기</a></li>
-                </ul>
-              </li>
-              <li class="eng"><a href="#" class="menu">Membership</a>
-                <ul class="sub">
-                  <li><a href="#">공차 멤버십</a></li>
-                  <li><a href="#">멤버십 오더</a></li>
-                  <li><a href="#">멤버십 금액권</a></li>
-                  <li><a href="#">선물하기</a></li>
-                  <li><a href="#">FAQ</a></li>
-                </ul>
-              </li>
-              <li class="eng"><a href="#" class="menu">Benefit</a>
-                <ul class="sub">
-                  <li><a href="#">통신사 제휴</a></li>
-                  <li><a href="#">결제 서비스</a></li>
-                </ul>
-              </li>
-              <li class="eng"><a href="#" class="menu">Event&News</a>
-                <ul class="sub">
-                  <li><a href="#">이벤트</a></li>
-                  <li><a href="#">공차 소식</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+          <ul class="eng">
+            <li>
+              <a href="story.html">
+                <span class="english">Brand</span>
+                <span class="kor">브랜드</span>
+              </a>
+              <ul class="sub">
+                <li><a href="story.html">브랜드 소개</a></li>
+                <li><a href="brand_promise.html">공차의 약속</a></li>
+                <li><a href="brand_identity.html">브랜드 아이덴티티</a></li>
+                <li><a href="brand_global.html">세계속의 공차</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="menu_howtoorder.html">
+                <span class="english">Menu</span>
+                <span class="kor">메뉴</span>
+              </a>
+              <ul class="sub">
+                <li><a href="menu_howtoorder.html">주문 방법</a></li>
+                <li><a href="menu_drink.html">음료</a></li>
+                <li><a href="menu_dessert.html">디저트</a></li>
+                <li><a href="menu_md.html">MD 상품</a></li>
+                <li><a href="menu_teaStory.html">티 스토리</a></li>
+                <li><a href="menu_teaRecipe.html">티 레시피</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="find_store.html">
+                <span class="english">Store</span>
+                <span class="kor">매장</span>
+              </a>
+              <ul class="sub">
+                <li><a href="find_store.html">매장 찾기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="membership.html">
+                <span class="english">Membership</span>
+                <span class="kor">멤버십</span>
+              </a>
+              <ul class="sub">
+                <li><a href="membership.html">공차 멤버십</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="benefit.html">
+                <span class="english">Benefit</span>
+                <span class="kor">제휴 서비스</span>
+              </a>
+              <ul class="sub">
+                <li><a href="benefit.html">통신사 제휴</a></li>
+                <li><a href="benefit_payment.html">결제 서비스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="event.html">
+                <span class="english">Event&amp;News</span>
+                <span class="kor">이벤트&amp;뉴스</span>
+              </a>
+              <ul class="sub">
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="news.html">공차 소식</a></li>
+              </ul>
+            </li>
+          </ul>
           <ul class="util">
             <li>
               <a href="#">공지사항</a>
@@ -96,19 +115,51 @@
       </div>
       <div id="quickmenu">
         <a href="http://www.gong-cha.co.kr/franchise/">
-          <img src="CSS/img/quick_img_off.png" alt="가맹점 문의">
+          <img src="css/img/quick_img_off.png" alt="가맹점 문의">
         </a>
       </div>
       <div id="container">
         <div id="main">
-          <div id="main_visual">
-            <ol class="visual_menu">
-              <li><a href="#">2021.01.13 COMING SOON</a></li>
-              <li><a href="#">1월 멤버십 데이</a></li>
-              <li><a href="#">금요일&토요일,배민 프로모션</a></li>
-              <li><a href="#">토피넛&다크초코 시즌메뉴</a></li>
-              <li><a href="#">타로&흑임자 시즌메뉴</a></li>
-              <li><a href="#">NEW 베스트 콤비네이션</a></li>
+          <div id="main_visual" class="main_visual n-motion n-top n-active">
+            <div class="bx-wrapper">
+              <div class="bx-viewport">
+                <ul class="bxslider">
+                  <li>
+                    <img src="css/img/main_slide/1.jpg" alt="">
+                    <a href="menu_drink.html" class="btn_brandstory" target="_self">
+                      <span>자세히 보기</span>
+                    </a>
+                  </li>
+                  <li>
+                    <img src="css/img/main_slide/2.jpg" alt="">
+                    <a href="menu_drink.html" class="btn_brandstory" target="_self">
+                      <span>자세히 보기</span>
+                    </a>
+                  </li>
+                  <li>
+                    <img src="css/img/main_slide/3.jpg" alt="">
+                    <a href="menu_drink.html" class="btn_brandstory" target="_self">
+                      <span>자세히 보기</span>
+                    </a>
+                  </li>
+                  <li>
+                    <img src="css/img/main_slide/4.jpg" alt="">
+                    <a href="menu_drink.html" class="btn_brandstory" target="_self">
+                      <span>자세히 보기</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="bx-control">
+                <a href="#" class="bx-prev">Prev</a>
+                <a href="#" class="bx-next">Next</a>
+              </div>
+            </div>
+            <ol class="visual_menu bx-pager">
+              <li><a href="#" data-slide-index="0">쿠팡이츠 2천원 할인</a></li>
+              <li><a href="#" data-slide-index="1">딸기&amp;쿠키 신메뉴</a></li>
+              <li><a href="#" data-slide-index="2">딸기&amp;치즈 신메뉴</a></li>
+              <li><a href="#" data-slide-index="3">NEW 베스트 콤비네이션</a></li>
             </ol>
           </div>
           <div id="main_contents">
@@ -126,7 +177,7 @@
                   고소하고 달콤한 타로 밀크티와 쫀득쫀득한 펄의 만남!<br>
                   공차의 대표 시그니처 메뉴를 만나보세요.
                 </h5>
-                <span class="sweet"><img src="CSS/img/sweet.png"></span>
+                <span class="sweet"><img src="css/img/sweet.png"></span>
                 <a href="#"><span class="view_more">더보기 ></span></a>
             </div>
             <div class="section2">
@@ -150,14 +201,26 @@
               <a href="#" class="see_more">자세히 보기 ></a>
             </div>
             <div class="section4">
-              <div>
-                <a href="#">
-                  <img src="CSS/img/comingsoon_1.jpg" id="season" alt="시즌 이미지">
-                </a>
-              </div>
+              <ul class="secslider">
+                <li>
+                  <a href="#">
+                    <img src="css/img/comingsoon_1.jpg" id="season" alt="시즌 이미지">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="css/img/comingsoon_2.jpg" id="season" alt="시즌 이미지">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="css/img/comingsoon_3.jpg" id="season" alt="시즌 이미지">
+                  </a>
+                </li>
+              </ul>
               <div class="bx_control">
-                <a class="bx_prev"  onclick="bx_image_control(0)"><</a>
-                <a class="bx_next"  onclick="bx_image_control(1)">></a>
+                <a class="bx_prev">&lt;</a>
+                <a class="bx_next">&gt;</a>
               </div>
             </div>
             <div class="section5">
@@ -193,7 +256,7 @@
             <div class="section6">
               <div class="banner">
                 <a href="#">
-                  <img src="CSS/img/moonsang.jpg" alt="문화상품권 결제 서비스 안내">
+                  <img src="css/img/moonsang.jpg" alt="문화상품권 결제 서비스 안내">
                 </a>
                 <span class="info">
                   <span class="info_tit">문화상품권 결제 서비스 안내</span>
@@ -202,7 +265,7 @@
               </div>
               <div class="banner">
                 <a href="#">
-                  <img src="CSS/img/membership.jpg" alt="멤버십 오더 서비스">
+                  <img src="css/img/membership.jpg" alt="멤버십 오더 서비스">
                 </a>
                 <span class="info">
                   <span class="info_tit">멤버십 오더 서비스</span>
@@ -216,16 +279,16 @@
             <div id="main_recipe" class="main_recipe">
               <div class="hgroup">
                 <h2 class="tit">공차 티 레시피</h2>
-                <ul class="tab">
-                  <li><a href="#">오리지널 티</a></li>
-                  <li><a href="#">밀크티</a></li>
-                  <li><a href="#">밀크폼&치즈폼</a></li>
-                  <li><a href="#">과일 그린티</a></li>
+                <ul class="tab_title tab">
+                  <li class="on"><a href="javascript:void(0)">오리지널 티</a></li>
+                  <li><a href="javascript:void(0)">밀크티</a></li>
+                  <li><a href="javascript:void(0)">밀크폼&amp;치즈폼</a></li>
+                  <li><a href="javascript:void(0)">과일 그린티</a></li>
                 </ul>
               </div>
               <ul class="recipe">
-                <li>
-                  <img src="CSS\brand_main_recipe_img1.jpg" alt class="img">
+                <li class="tab_content on">
+                  <img src="css/img/brand_main_recipe_img1.jpg" alt class="img">
                   <p class="tit1">
                     TEA RECIPE - 티 레시피
                   </p>
@@ -241,9 +304,57 @@
                     <span>메뉴 보러가기</span>
                   </a>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="tab_content">
+                  <img src="css/img/brand_main_recipe_img2.jpg" alt class="img">
+                  <p class="tit1">
+                    TEA RECIPE - 티 레시피
+                  </p>
+                  <p class="tit2">
+                    밀크티 - Milk Tea
+                  </p>
+                  <p class="txt">
+                    최적의 자연이 키워낸 입차만 골라 각 차종에 맞는 황금률로 우려 담백한 우유와
+                    <br>
+                    허니, 카라멜 등 새로운 맛을 더해 만듭니다.
+                  </p>
+                  <a href="#" class="btn">
+                    <span>메뉴 보러가기</span>
+                  </a>
+                </li>
+                <li class="tab_content">
+                  <img src="css/img/brand_main_recipe_img4.jpg" alt class="img">
+                  <p class="tit1">
+                    TEA RECIPE - 티 레시피
+                  </p>
+                  <p class="tit2">
+                    밀크폼&amp;치즈폼 - Milk Foam &amp; Cheese Foam
+                  </p>
+                  <p class="txt">
+                    프리미엄 잎차만 골라 차마다 다른 황금률로 우려
+                    <br>
+                    달콤짭조름한 밀크폼 또는 치즈폼을 더해 만듭니다.
+                  </p>
+                  <a href="#" class="btn">
+                    <span>메뉴 보러가기</span>
+                  </a>
+                </li>
+                <li class="tab_content">
+                  <img src="css/img/brand_main_recipe_img5.jpg" alt class="img">
+                  <p class="tit1">
+                    TEA RECIPE - 티 레시피
+                  </p>
+                  <p class="tit2">
+                    과일 그린티 - Fruit Green Tea
+                  </p>
+                  <p class="txt">
+                    찻잎의 푸름을 간직한 녹차만 골라 최적의 온도 89℃로 우려
+                    <br>
+                    달콤상큼한 과일을 더해 만듭니다.
+                  </p>
+                  <a href="#" class="btn">
+                    <span>메뉴 보러가기</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -252,7 +363,7 @@
       <div id="footer">
         <div class="footer_inner">
           <div class="footer_left">
-            <img src="CSS/img/logo.png" class="logo">
+            <img src="css/img/logo.png" class="logo">
           </div>
           <div class="footer_right">
             <ul class="ft_menu">
