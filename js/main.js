@@ -1,50 +1,46 @@
 $(document).ready(function(){
 
+  var tmpMenu;
+  var curMenu;
+
   $('ul.tab_title li').on('click', function()
   {
 
       var $this = $(this);
-      var index = $this.index();
+      var seq = $this.index();
 
       $('.tab_title li, .tab_content').removeClass("on");
       $this.addClass("on");
 
-      $('.tab_content').eq(index).addClass("on");
+      $('.tab_content').eq(seq).addClass("on");
 
   });
+
 
   $('ul.eng > li').on('mouseover', function()
   {
 
+      curMenu = $(this);
+      curMenu.addClass("on");
 
-      var $this = $(this);
-      var menuIndex = $this.index();
-
-      $('ul.eng li').removeClass("on");
-      $this.addClass("on");
-
-      $('ul.sub li').on('mouseover', function()
+      curMenu.on('mouseleave', function()
       {
 
-        $('ul.eng > li').closest('ul.eng > li').removeClass("on");
-        $('ul.eng > li').eq(menuIndex).addClass("on");
+        tmpMenu = curMenu;
+        tmpMenu.removeClass("on");
 
-      });
-
-      $('ul.eng li').on('mouseleave', function(){
-
-        $('ul.eng > li').removeClass("on");
       })
+
 
   });
 
 
-  $('.eng li, .sub').on('mouseover', function()
+  $('#header').on('mouseover', function()
   {
 
     $('#header').addClass("open");
 
-    $('.eng li, .sub').on('mouseleave', function()
+    $('#header').on('mouseleave', function()
     {
 
       $('#header').removeClass("open");
